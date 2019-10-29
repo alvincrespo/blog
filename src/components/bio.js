@@ -53,6 +53,12 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
+      <p>
+        Blog written by{" "}
+        <a href={`https://twitter.com/${social.twitter}`}>@alvincrespo</a> and
+        developed using <a href="https://www.gatsbyjs.org/">GatsbyJS</a>.
+        <br /> Contact me for random wisdom.
+      </p>
     </div>
   )
 }
