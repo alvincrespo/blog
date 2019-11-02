@@ -49,26 +49,30 @@ On top of figuring this out for you, they have provided an easy to use [API](htt
 
 First, install the package:
 
-```
+```shell
 yarn add blueimp-load-image
 ```
 
 Next, import the package int your JS:
 
-```
-import loadImage from 'blueimp-load-image';
+```javascript
+import loadImage from "blueimp-load-image"
 ```
 
 Finally, to ensure orientation is fixed:
 
-```
-const handleFileChange = ({ target: { files }}) => {
-  const file = files.item(0);
+```javascript
+const handleFileChange = ({ target: { files } }) => {
+  const file = files.item(0)
 
-  loadImage(file, (img) => {
-    document.getElementById('uploaded-image').appendChild(img);
-  }, { maxWidth: 125, orientation: true });
-};
+  loadImage(
+    file,
+    img => {
+      document.getElementById("uploaded-image").appendChild(img)
+    },
+    { maxWidth: 125, orientation: true }
+  )
+}
 ```
 
 Note that I'm setting `orientation` to `true`as part `loadImage`'s 2nd parameter object. I've also included a `maxWidth` of 125 for my use case. For more options, check out the docs [here](https://github.com/blueimp/JavaScript-Load-Image#options).

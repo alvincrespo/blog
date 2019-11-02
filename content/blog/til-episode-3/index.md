@@ -15,33 +15,33 @@ tags: node,jest,testing
 
 - Once you add the mock, the template for your test would look something like [this](https://github.com/echobind/eb-scripts/pull/8/files#diff-ac669a837ca1091fbd724061691f7c74)
 
-```
+```javascript
 //  src/utils/my.test.ts
 
 afterEach(() => {
   // reset your modules after each test
-  jest.resetModules();
-});
+  jest.resetModules()
+})
 
 test("some test that requires the non-mocked node module", () => {
-  jest.dontMock("fs");
+  jest.dontMock("fs")
 
   // add your test here
-});
+})
 
 test("some test that mocks the fs module in order to test the expected outcome", () => {
-  jest.mock("fs");
+  jest.mock("fs")
 
   // add your test here
-});
+})
 ```
 
 - If you want to test out some global node object, such as process - you can do the following:
 
-```
+```javascript
 test("some test that mocks the global process object", () => {
-  jest.spyOn(process, "cwd").mockImplementation(() => "well..hello there!");
+  jest.spyOn(process, "cwd").mockImplementation(() => "well..hello there!")
 
   // add your test here
-});
+})
 ```

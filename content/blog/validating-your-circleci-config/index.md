@@ -33,7 +33,7 @@ circleci config validate
 
 Let's say I did run the validator and had a syntax error, what would that look like?
 
-```
+```shell
 ➜  circleci config validate
 Error: Unable to parse YAML
 while scanning a simple key
