@@ -32,7 +32,9 @@ TL;DR - browsers don't handle the EXIF data provided by the phone.
 For more information you can check out this excellent resources:
 
 [EXIF Orientation Handling Is a Ghetto](https://www.daveperrett.com/articles/2012/07/28/exif-orientation-handling-is-a-ghetto/)
+
 [JS Client-Side Exif Orientation: Rotate and Mirror JPEG Images](https://stackoverflow.com/questions/20600800/js-client-side-exif-orientation-rotate-and-mirror-jpeg-images)
+
 [Handle image rotation on mobile](https://medium.com/wassa/handle-image-rotation-on-mobile-266b7bd5a1e6)
 
 ## How does [blueimp-load-image](https://www.npmjs.com/package/blueimp-load-image) address the issue
