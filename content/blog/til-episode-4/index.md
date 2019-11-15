@@ -30,7 +30,9 @@ For information around formatting, check out the `--format` flag [documentation]
 If you'd prefer to avoid creating a global configuration for viewing your timeline, you can easily
 use `--oneline` and `--graph` flags in your terminal, thanks to [Chris Achard](https://twitter.com/chrisachard) for this one!
 
+<div align="center">
 <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Want to see something cool? <br><br>Open a terminal to an active git project you have, and type:<br><br>git log --oneline --graph<br><br>🤯</p>&mdash; Chris Achard (@chrisachard) <a href="https://twitter.com/chrisachard/status/1192825445265399811?ref_src=twsrc%5Etfw">November 8, 2019</a></blockquote>
+</div>
 
 So what does this command do?
 
@@ -40,7 +42,13 @@ git log --oneline --graph
 
 Let's break it down:
 
-Well, as per the [git documentation](https://git-scm.com/docs/git-log#Documentation/git-log.txt---oneline), `--oneline` is just a shortcut for `--pretty=oneline --abbrev-commit`:
+The [git documentation](https://git-scm.com/docs/git-log#Documentation/git-log.txt---oneline) specifies that `--oneline` is just a shortcut for:
+
+```shell
+--pretty=oneline --abbrev-commit
+```
+
+In practice, it looks like this:
 
 ```shell
 git log --pretty=oneline --abbrev-commit --graph
@@ -48,8 +56,15 @@ git log --pretty=oneline --abbrev-commit --graph
 
 ![Example Git Timeline w/ Inline Pretty Flag](./gitlog-inline-prettyoneline.png)
 
-Ok, so what does `--graph` do? The [git documentation](https://git-scm.com/docs/git-log#Documentation/git-log.txt---graph) states:
+Finally, what does `--graph` do? Again, going back to [git's documentation](https://git-scm.com/docs/git-log#Documentation/git-log.txt---graph):
 
 > Draw a text-based graphical representation of the commit history on the left hand side of the output.
 
-So that's pretty much just giving you a nice way to represent your timeline with `*`.
+Basically, `*` is used to represent a single line in your timeline.
+
+<hr>
+
+Alright! Thank you for reading my learnings from today. Did you learn something new? Anything here
+that I got wrong or can improve on? Let me know at [@alvincrespo](https://twitter.com/alvincrespo).
+
+Cheers!
