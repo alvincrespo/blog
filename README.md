@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4cadbef4-f1a3-4223-910d-ef9a35032874/deploy-status)](https://app.netlify.com/sites/stupefied-euler-a91149/deploys)
+
 <p align="center">
   🐺 Personal Ramblings and Random Thoughts 🐺 
 </p>
