@@ -21,7 +21,7 @@ I've been using this since my time at [Customer.io](https://customer.io/). Thank
 
 This will produce a timeline like:
 
-![Example Git Timeline w/ Global Config]('./gitlog-global-config.png')
+![Example Git Timeline w/ Global Config](./gitlog-global-config.png)
 
 For information around formatting, check out the `--format` flag [documentation](https://git-scm.com/docs/git-log#_pretty_formats).
 
@@ -46,7 +46,7 @@ Well, as per the [git documentation](https://git-scm.com/docs/git-log#Documentat
 git log --pretty=oneline --abbrev-commit --graph
 ```
 
-![Example Git Timeline w/ Inline Pretty Flag]('./gitlog-inline-prettyoneline.png')
+![Example Git Timeline w/ Inline Pretty Flag](./gitlog-inline-prettyoneline.png)
 
 Ok, so what does `--graph` do? The [git documentation](https://git-scm.com/docs/git-log#Documentation/git-log.txt---graph) states:
 
