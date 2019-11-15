@@ -5427,6 +5427,13 @@ gatsby-plugin-sharp@^2.2.39:
     svgo "1.3.2"
     uuid "^3.3.3"
 
+gatsby-plugin-twitter@^2.1.14:
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.1.14.tgz#74a1f77b56c741d58e614efd49b6242d56fa474c"
+  integrity sha512-sOiCPB83JN3bQBjMEWnWhfNJrH0xY2y32i8ulmQriyAHOyIwr9TRO3c4zWSB4Y6o0ACxCsNfkQltYJEKol5+gw==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+
 gatsby-plugin-typography@^2.3.17:
   version "2.3.17"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typography/-/gatsby-plugin-typography-2.3.17.tgz#2040bd7fd8e925fe50355f834702b27c3f0afd97"
