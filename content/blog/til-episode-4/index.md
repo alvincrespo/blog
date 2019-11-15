@@ -30,7 +30,7 @@ For information around formatting, check out the `--format` flag [documentation]
 If you'd prefer to avoid creating a global configuration for viewing your timeline, you can easily
 use `--oneline` and `--graph` flags in your terminal, thanks to [Chris Achard](https://twitter.com/chrisachard) for this one!
 
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Want to see something cool? <br><br>Open a terminal to an active git project you have, and type:<br><br>git log --oneline --graph<br><br>🤯</p>&mdash; Chris Achard (@chrisachard) <a href="https://twitter.com/chrisachard/status/1192825445265399811?ref_src=twsrc%5Etfw">November 8, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">Want to see something cool? <br><br>Open a terminal to an active git project you have, and type:<br><br>git log --oneline --graph<br><br>🤯</p>&mdash; Chris Achard (@chrisachard) <a href="https://twitter.com/chrisachard/status/1192825445265399811?ref_src=twsrc%5Etfw">November 8, 2019</a></blockquote>
 
 So what does this command do?
 

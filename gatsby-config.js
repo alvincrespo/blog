@@ -90,5 +90,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-twitter`,
   ],
 }
