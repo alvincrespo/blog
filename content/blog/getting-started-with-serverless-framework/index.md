@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Serverless Framework
 date: "2019-11-16T11:30:00.000Z"
-description: I'm learning the Serverless Framework, so I thought I'd share the quickest way to get started.
+description: Let's learn how to get started with Serverless Framework. Here is a guide to get  your first app setup, running and deployed.
 tags: serverless,serverless framework,getting started,cli
 ---
 
