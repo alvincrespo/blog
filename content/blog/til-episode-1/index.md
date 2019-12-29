@@ -1,5 +1,5 @@
 ---
-title: TIL - Episode 1
+title: TIL - Episode 1. Advice for growing businesses.
 date: "2019-10-26T19:42:00.000Z"
 description: Watched a few videos around business, growth and inspiration that I believe everyone could learn from.
 tags: business,growth,inspiration,leadership,til
