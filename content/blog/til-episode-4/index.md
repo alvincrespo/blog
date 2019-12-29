@@ -1,5 +1,5 @@
 ---
-title: TIL - Episode 4
+title: TIL - Episode 4. Configuring GIT timeline views.
 date: "2019-11-08T07:00:00.000Z"
 description: Easily reading your git timeline
 tags: git,timeline,pretty,format,config

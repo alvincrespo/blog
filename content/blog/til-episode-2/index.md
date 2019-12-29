@@ -1,5 +1,5 @@
 ---
-title: TIL - Episode 2
+title: TIL - Episode 2. Fix bundler versioning issues.
 date: "2019-10-27T17:00:00.000Z"
 description: Fixed a few issues on a side project using Ruby and PostgreSQL.
 tags: bundler,circleci,postgres,til

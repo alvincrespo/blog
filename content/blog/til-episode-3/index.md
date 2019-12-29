@@ -1,5 +1,5 @@
 ---
-title: TIL - Episode 3
+title: TIL - Episode 3. Mocking node modules.
 date: "2019-10-31T07:00:00.000Z"
 description: Mock testing the node fs module and global process
 tags: node,jest,testing
