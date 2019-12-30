@@ -6,7 +6,7 @@ tags: gatsbyjs,sourcing data,querying data
 ---
 
 Today I was working on getting testimonials on my personal site, to do this I had to learn about
-["sourcing"](https://www.gatsbyjs.org/docs/recipes/sourcing-data) and "querying" data in GatsbyJs. It took a couple of steps, but I was eventually able to get to a point where I could manage this data as a separate file.
+["sourcing"](https://www.gatsbyjs.org/docs/recipes/sourcing-data), ["transforming"](https://www.gatsbyjs.org/docs/recipes/transforming-data) and ["querying"](https://www.gatsbyjs.org/docs/recipes/querying-data) data in GatsbyJs. It took a couple of steps, but I was eventually able to get to a point where I could manage this data as a separate file.
 
 The [first step](https://github.com/alvincrespo/groggy/commit/cb561b043384a3dac6319ada17456e0c06dc9f57) in this process was following along in the ["Sourcing Data"](https://www.gatsbyjs.org/docs/recipes/sourcing-data) guide.
 
