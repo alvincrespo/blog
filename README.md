@@ -4,7 +4,7 @@
   🐺 Personal Ramblings and Random Thoughts 🐺 
 </p>
 <h1 align="center">
-  [My Personal Blog](https://blog.alvincrespo.com/)
+  <a href="https://blog.alvincrespo.com/">My Personal Blog</a>
 </h1>
 
 ## Goals
