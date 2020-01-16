@@ -4,7 +4,18 @@
   🐺 Personal Ramblings and Random Thoughts 🐺 
 </p>
 <h1 align="center">
-  My personal blog
+  [My Personal Blog](https://blog.alvincrespo.com/)
 </h1>
+
+## Goals
+
+TBD
+
+
+## Scheduling
+
+TBD
+
+
 
 Built on [GatsbyJS](https://www.gatsbyjs.org/) and deployed via [Netlify](https://www.netlify.com/).
