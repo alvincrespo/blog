@@ -5,6 +5,8 @@ description: Presenting local data in your GatbsyJS site is simple once you know
 tags: gatsbyjs,sourcing data,querying data
 ---
 
+Update: If you're looking for code, checkout the testimonials history for my personal site [here](https://github.com/alvincrespo/groggy/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed+testimonial).
+
 Today I was working on getting testimonials on my personal site, to do this I had to learn about
 ["sourcing"](https://www.gatsbyjs.org/docs/recipes/sourcing-data), ["transforming"](https://www.gatsbyjs.org/docs/recipes/transforming-data) and ["querying"](https://www.gatsbyjs.org/docs/recipes/querying-data) data in GatsbyJs. It took a couple of steps, but I was eventually able to get to a point where I could manage this data as a separate file.
 
