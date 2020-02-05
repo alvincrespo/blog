@@ -15,7 +15,7 @@ I bring this up because it's very easy to get caught up in the hype that is TBD 
 <br>
 
 Testing is absolutely necessary, especially at the beginning of a project. I've been involved
-in too many projects where development was slow, deadliness were missed and trust was lacking
+in too many projects where development was slow, deadlines were missed and trust was lacking
 because of the lack of confidence in the codebase. Oh, but you can test manually you say? I think NOT.
 Why? Well because of the following:
 
