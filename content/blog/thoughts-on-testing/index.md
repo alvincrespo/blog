@@ -1,7 +1,7 @@
 ---
 title: Automated Testing. Do it.
 date: "2020-02-04T11:30:00.000Z"
-description: This past week there's been some talk around testing, specifically how automated testing is expensive and not really worth it.
+description: Automated testing may not seem worth it - but its absolutely critical at any stage of your product lifecycle. Check out this post on why I think you should start automatically testing your app today.
 tags: testing,automated testing,reasoning
 ---
 
