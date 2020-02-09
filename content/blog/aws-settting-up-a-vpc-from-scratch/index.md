@@ -7,7 +7,7 @@ tags: aws,solutions architect,vpc,how-to,guide
 
 AWS allows you to build a Virtual Private Cloud (VPC) easily with their wizard tool, but we should theoretically know what it takes to build one out ourselves. Using tools that simplifes this process is wonderful, but if you ever really need to dive into the internals - knowing the vocabulary of what get's spun up is super important. Below are notes I've put together on setting up a VPC easily based on my research and study for the AWS Solutions Architect exam. Hope you find this useful!
 
-Below is a Table of Contents (TOC) for you to easily dive through each section as needed. If you're new to this, like I was, starting at [Creaet your VPC](#create-your-vpc) is the way to go. If you're studying and need a quick refresher for each step of the process, feel free to skip any section an move on.
+Below is a Table of Contents (TOC) for you to easily dive through each section as needed. If you're new to this, like I was, starting at [Create your VPC](#create-your-vpc) is the way to go. If you're studying and need a quick refresher for each step of the process, feel free to skip any section an move on.
 
 - [Create your VPC](#create-your-vpc)
 - [Create your Subnets](#create-your-subnets)
@@ -112,11 +112,11 @@ You can now verify that the public subnet has an auto-assigned public IP address
 
 Navigate to "Internet Gateways"
 
-![./assets/Untitled%204.png](./assets/Untitled%204.png)
+![AWS Console / Virtual Private Cloud / Internet Gateways / Sidebar](./assets/aws-console-vpcs-internet-gateways-sidebar.png)
 
 Click "Create Internet gateway"
 
-![./assets/Untitled%205.png](./assets/Untitled%205.png)
+![AWS Console / Virtual Private Cloud / Internet Gateways / Create Internet Gateway Button](./assets/aws-console-vpcs-internet-gateways-create-internet-gateway-button.png)
 
 Give your new internet gateway a name
 
@@ -152,17 +152,17 @@ We need to configure our main route to go out to the internet.
 
 Currently it is configured to have any subnet communicate with each other:
 
-![./assets/Untitled%206.png](./assets/Untitled%206.png)
+![AWS Console / Virtual Private Cloud / Route Tables / Main Route Table Routes](./assets/aws-console-vpcs-route-tables-main-route-routes.png)
 
 Both existing subnets have also been, by default, associated to main routing table:
 
-![./assets/Untitled%207.png](./assets/Untitled%207.png)
+![AWS Console / Virtual Private Cloud / Route Tables / Main Route Table Subnet Associations](./assets/aws-console-vpcs-route-tables-main-route-table-subnet-associations.png)
 
 Note: We do **NOT** want to open the main routing table to the internet. This would cause every subnet by default to be open to the internet.
 
 Click "Create route table"
 
-![./assets/Untitled%208.png](./assets/Untitled%208.png)
+![AWS Console / Virtual Private Cloud / Route Tables / Create Route Table](./assets/aws-consle-vpcs-route-tables-create-route-table-button.png)
 
 Give your new route table a name, and associate it with your new VPC
 
@@ -184,7 +184,7 @@ You'll notice the new route table is not automatically configured to connect wit
 
 Click on "Edit routes"
 
-![./assets/Untitled%209.png](./assets/Untitled%209.png)
+![AWS Console / Virtual Private Cloud / Route Tables / New Route Table / Edit Routes Button](./assets/aws-console-vpcs-route-tables-new-route-table-edit-routes-button.png)
 
 Add both IPv4 and IPv6 routes and select the internet gateway that was created in the last section:
 
