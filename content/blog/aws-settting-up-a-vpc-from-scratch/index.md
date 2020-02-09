@@ -1,13 +1,30 @@
 ---
-title: AWS - Setting up a VPC from scratch
+title: AWS - Building a VPC from Scratch
 date: "2020-02-09T06:54:00.000Z"
 description: I'm currently studying for my AWS Solutions Architect exam and setting up a VPC is an extremely important aspect of the exam. In fact, if you can set up a VPC from scratch by memory - you're well over halfway there. This post is a simple how-to guide for anyone interested in setting up their own VPC on AWS.
 tags: aws,solutions architect,vpc,how-to,guide
 ---
 
-# Building a VPC from Scratch
+AWS allows you to build a Virtual Private Cloud (VPC) easily with their wizard tool, but we should theoretically know what it takes to build one out ourselves. Using tools that simplifes this process is wonderful, but if you ever really need to dive into the internals - knowing the vocabulary of what get's spun up is super important. Below are notes I've put together on setting up a VPC easily based on my research and study for the AWS Solutions Architect exam. Hope you find this useful!
 
-# Create your VPC
+Below is a Table of Contents (TOC) for you to easily dive through each section as needed. If you're new to this, like I was, starting at [Creaet your VPC](#create-your-vpc) is the way to go. If you're studying and need a quick refresher for each step of the process, feel free to skip any section an move on.
+
+- [Create your VPC](#create-your-vpc)
+- [Create your Subnets](#create-your-subnets)
+  - [Create Public Subnet](#create-public-subnet)
+  - [Create Private Subnet](#create-private-subnet)
+  - [Enable Public IP on Public Subnet](#enable-public-ip-on-public-subnet)
+- [Create Internet Gateway](#create-internet-gateway)
+- [Configuring your Route Table](#configuring-your-route-table)
+- [Configuring EC2 Instances](#configuring-ec2-instances)
+  - [Configuring a Public EC2 Instance](#configuring-a-public-ec2-instance)
+  - [Configuring a Private EC2 Instance](#configuring-a-private-ec2-instance)
+- [Testing Your VPC](#testing-your-vpc)
+- [Enabling Subnet → Subnet Communication](#enabling-subnet---subnet-communication)
+- [Testing our VPC for Cross Subnet Communication](#testing-our-vpc-for-cross-subnet-communication)
+- [Summary: What we built](#summary--what-we-built)
+
+<h1 id="create-your-vpc">Create your VPC</h1>
 
 Go to VPC
 
@@ -31,9 +48,9 @@ Click "Create"
 
 ---
 
-# Create Subnet
+<h1 id="create-your-subnets">Create your Subnets</h1>
 
-## Create Public Subnet
+<h2 id="create-public-subnet">Create Public Subnet</h2>
 
 Navigate to "Subnets"
 
@@ -57,7 +74,7 @@ Click "Create"
 
 ![AWS Console / Virtual Private Cloud / Subnets / Subnets / With New Subnet](./assets/aws-console-vpcs-subnets-new-subnet.png)
 
-## Create Private Subnet
+<h2 id="create-private-subnet">Create Private Subnet</h2>
 
 Click "Create subnet"
 
@@ -69,7 +86,7 @@ Click "Create"
 
 ![./assets/Screen_Shot_2020-02-05_at_7.20.55_AM.png](./assets/Screen_Shot_2020-02-05_at_7.20.55_AM.png)
 
-## Enable Public IP on Public Subnet
+<h2 id="enable-public-ip-on-public-subnet">Enable Public IP on Public Subnet</h2>
 
 Select the public subnet
 
@@ -91,7 +108,7 @@ You can now verify that the public subnet has an auto-assigned public IP address
 
 ---
 
-# Create Internet Gateway
+<h1 id="create-internet-gateway">Create Internet Gateway</h1>
 
 Navigate to "Internet Gateways"
 
@@ -129,7 +146,7 @@ Click "Attach" and you should then see your new internet gateway attached to you
 
 ---
 
-# Configuring your Route Table
+<h1 id="configuring-your-route-table">Configuring your Route Table</h1>
 
 We need to configure our main route to go out to the internet.
 
@@ -213,9 +230,9 @@ Note that 10.0.1.0/24 has been associated with our new public route table, while
 
 ---
 
-# Configuring EC2 Instances
+<h1 id="configuring-ec2-instances">Configuring EC2 Instances</h1>
 
-## Configuring a Public EC2 Instance
+<h2 id="configuring-a-public-ec2-instance">Configuring a Public EC2 Instance</h2>
 
 Our public EC2 instance will be our webserver, this is where your Rails, Django, Express application would exist. It needs to be publicly accessible so we're going to attach it to our public subnet within our VPC. Let's get started!
 
@@ -289,7 +306,7 @@ Awesome! Now it's time to create a private EC2 instance.
 
 ---
 
-## Configuring a Private EC2 Instance
+<h2 id="configuring-a-private-ec2-instance">Configuring a Private EC2 Instance</h2>
 
 Click "Launch instance"
 
@@ -357,7 +374,7 @@ Note: Your public instance, WebServer, will have an IPv4 Public IP - while your 
 
 ---
 
-# Testing Your VPC
+<h1 id="testing-your-vpc">Testing Your VPC</h1>
 
 First, we need to `chmod` our new key pair:
 
@@ -394,7 +411,7 @@ This is because we used our default security group when creating the private ins
 
 ---
 
-# Enabling Subnet → Subnet Communication
+<h1 id="enabling-subnet---subnet-communication">Enabling Subnet → Subnet Communication</h1>
 
 From the instances page, click on "Security Groups" in the left sidebar.
 
@@ -433,7 +450,7 @@ In the "Change Security Groups" mdoal, select the new security group we created 
 
 ---
 
-# Testing our VPC for Cross Subnet Communication
+<h1 id="testing-our-vpc-for-cross-subnet-communication">Testing our VPC for Cross Subnet Communication</h1>
 
 Alright! So now that our DB server has the newly configured security group to allow inbound communication from our public subnet - let's see if we can ping our DB server from inside our Web server:
 
@@ -457,7 +474,7 @@ Alright! So now that our DB server has the newly configured security group to al
 
 ---
 
-# Summary: What we built
+<h1 id="summary--what-we-built">Summary: What we built</h1>
 
 ![Basic VPC Architecture](./assets/basic-vpc-architecture.png)
 
