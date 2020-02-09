@@ -11,23 +11,23 @@ tags: aws,solutions architect,vpc,how-to,guide
 
 Go to VPC
 
-![./assets/Untitled.png](./assets/Untitled.png)
+![AWS Console Menu / Networking & Content Delivery / VPC](./assets/aws-console-menu.png)
 
 Click on "Your VPC's"
 
-![./assets/Untitled%201.png](./assets/aws-your-vpcs.png)
+![AWS Console / Virtual Private Cloud / Your VPC's](./assets/aws-your-vpcs.png)
 
 Click on "Create VPC"
 
-![./assets/Untitled%202.png](./assets/Untitled%202.png)
+![AWS Console / Virtual Private Cloud / Your VPC's / Create VPC](./assets/aws-create-vpc.png)
 
 Fill in the form. Specifying the proper CIDR block and selecting "Amazon Provided IPv6 CIDR block"
 
-![./assets/Screen_Shot_2020-02-05_at_7.11.39_AM.png](./assets/Screen_Shot_2020-02-05_at_7.11.39_AM.png)
+![AWS Console / Virtual Private Cloud / Create VPC](./assets/aws-console-vpcs-create-vpc.png)
 
 Click "Create"
 
-![./assets/Screen_Shot_2020-02-05_at_7.11.48_AM.png](./assets/Screen_Shot_2020-02-05_at_7.11.48_AM.png)
+![AWS Console / Virtual Private Cloud / Create VPC / Success](./assets/aws-console-vpcs-create-vpc-success.png)
 
 ---
 
@@ -37,25 +37,25 @@ Click "Create"
 
 Navigate to "Subnets"
 
-![./assets/Screen_Shot_2020-02-05_at_7.16.44_AM.png](./assets/Screen_Shot_2020-02-05_at_7.16.44_AM.png)
+![AWS Console / Virtual Private Cloud / Subnets](./assets/aws-console-vpcs-subnets.png)
 
 Click "Create subnet"
 
-![./assets/Untitled%203.png](./assets/Untitled%203.png)
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Button](./assets/aws-console-vpcs-subnets-create-subnet.png)
 
 You should now see the "Create subnet" workflow:
 
-![./assets/Screen_Shot_2020-02-05_at_7.17.13_AM.png](./assets/Screen_Shot_2020-02-05_at_7.17.13_AM.png)
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Screen](./assets/aws-console-vpcs-subnets-create-subnet-screen.png)
 
 Fill In fields, like so:
 
-![./assets/Screen_Shot_2020-02-05_at_7.18.58_AM.png](./assets/Screen_Shot_2020-02-05_at_7.18.58_AM.png)
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Screen / Filled In](./assets/aws-console-vpcs-subnets-create-subnet-screen-filledin.png)
 
 Click "Create"
 
-![./assets/Screen_Shot_2020-02-05_at_7.19.16_AM.png](./assets/Screen_Shot_2020-02-05_at_7.19.16_AM.png)
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet / Success](./assets/aws-console-vpcs-subnets-create-subnet-success.png)
 
-![./assets/Screen_Shot_2020-02-05_at_7.19.18_AM.png](./assets/Screen_Shot_2020-02-05_at_7.19.18_AM.png)
+![AWS Console / Virtual Private Cloud / Subnets / Subnets / With New Subnet](./assets/aws-console-vpcs-subnets-new-subnet.png)
 
 ## Create Private Subnet
 
@@ -459,7 +459,7 @@ Alright! So now that our DB server has the newly configured security group to al
 
 # Summary: What we built
 
-![./assets/Caching_Cluster_Architecture.png](./assets/Caching_Cluster_Architecture.png)
+![Basic VPC Architecture](./assets/basic-vpc-architecture.png)
 
 The diagram above shows what we have built.
 
