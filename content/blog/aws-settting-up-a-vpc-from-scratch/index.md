@@ -238,15 +238,15 @@ Our public EC2 instance will be our webserver, this is where your Rails, Django,
 
 Navigate to EC2
 
-![./assets/Untitled%2011.png](./assets/Untitled%2011.png)
+![AWS Console / Menu / EC2](./assets/aws-console-menu-ec2.png)
 
 Click "Launch Instance" and select "Launch instance" from dropdown:
 
-![./assets/Untitled%2012.png](./assets/Untitled%2012.png)
+![AWS Console / EC2 / Launch Instance button](./assets/aws-console-ec2-launch-instance-button.png)
 
 Select an AMI, for this article - we're going with the first option:
 
-![./assets/Untitled%2013.png](./assets/Untitled%2013.png)
+![AWS Console / EC2 / Launch Instance / Choose AMI](./assets/aws-console-ec2-launch-instance-choose-ami.png)
 
 Select the instance type you prefer, again for this article we're keeping it simple so we're going with the free tier t2.micro instance type. Then click "Configure Instance Details".
 
@@ -258,7 +258,7 @@ These are the default settings you'll see:
 
 You'll want to change the "Network" and "Subnet". The "Network" will be your **VPC** and your subnet will be your **public subnet**.
 
-![./assets/Untitled%2014.png](./assets/Untitled%2014.png)
+![AWS Console / EC2 / Launch Instance / Configure Instance](./assets/aws-console-ec2-launch-instance-configure-instance.png)
 
 Note: The auto-assign Public IP is set to "Use subnet setting (Enable)".
 
@@ -310,7 +310,7 @@ Awesome! Now it's time to create a private EC2 instance.
 
 Click "Launch instance"
 
-![./assets/Untitled%2015.png](./assets/Untitled%2015.png)
+![AWS Console / EC2 / Launch Instance Button w/ Public Instance Created](./assets/aws-console-ec2-launch-instance-button-2.png)
 
 Select the AMI at the top, Amazon Linux 2 AMI
 
