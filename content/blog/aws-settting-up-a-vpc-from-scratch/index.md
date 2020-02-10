@@ -5,7 +5,9 @@ description: I'm currently studying for my AWS Solutions Architect exam and sett
 tags: aws,solutions architect,vpc,how-to,guide
 ---
 
-AWS allows you to build a Virtual Private Cloud (VPC) easily with their wizard tool, but we should theoretically know what it takes to build one out ourselves. Using tools that simplifes this process is wonderful, but if you ever really need to dive into the internals - knowing the vocabulary of what get's spun up is super important. Below are notes I've put together on setting up a VPC easily based on my research and study for the AWS Solutions Architect exam. Hope you find this useful!
+The best way to learn anything is by digging in.
+
+AWS has a wizard for building out a Virtual Private Cloud (VPC), but in this article - I'm going to share my notes on how to build one out yourself from scratch. You'll get to know the basic vocabulary used to build out a VPC. Below are notes I've put together on setting up a VPC based on my research and study for the [AWS Solutions Architect](https://aws.amazon.com/certification/certified-solutions-architect-associate/) exam. Hope you find this useful!
 
 Below is a Table of Contents (TOC) for you to easily dive through each section as needed. If you're new to this, like I was, starting at [Create your VPC](#create-your-vpc) is the way to go. If you're studying and need a quick refresher for each step of the process, feel free to skip any section an move on.
 
