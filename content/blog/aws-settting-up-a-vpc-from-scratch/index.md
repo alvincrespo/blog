@@ -23,6 +23,7 @@ Below is a Table of Contents (TOC) for you to easily dive through each section a
 - [Enabling Subnet → Subnet Communication](#enabling-subnet---subnet-communication)
 - [Testing our VPC for Cross Subnet Communication](#testing-our-vpc-for-cross-subnet-communication)
 - [Summary: What we built](#summary--what-we-built)
+- [References](#references)
 
 <h1 id="create-your-vpc">Create your VPC</h1>
 
@@ -212,7 +213,7 @@ You'll notice, no subnets are associated with this table.
 
 Click "Edit subnet associations"
 
-![./assets/Untitled%2010.png](./assets/Untitled%2010.png)
+![AWS Console / VPCs / Route Tables / New Route Table / Edit Subnet Associations](./assets/aws-console-vpcs-new-route-table-edit-subnet-associations.png)
 
 Select the subnet(s) you want to be public, for this article, we're selecting any device under 10.0.1.0/24 to be public.
 
@@ -326,7 +327,7 @@ These are the default settings you will see for your instance:
 
 Let's configure this instance to use our VPC and the private subnet:
 
-![./assets/Untitled%2016.png](./assets/Untitled%2016.png)
+![AWS Console / EC2 / Launch Instance / Configure Instance / Private Subnet](./assets/aws-console-vpcs-new-route-table-edit-subnet-associations.png)
 
 Note: The "Auto-assign Public IP" option will be set to "Use subnet setting (Disable)". It is disabled because we're putting it behind our private subnet.
 
@@ -368,7 +369,7 @@ You'll be taken to your instances status page, click "View Instances"
 
 Your instance may be pending, but once it's finished launching - you should see:
 
-![./assets/Untitled%2017.png](./assets/Untitled%2017.png)
+![AWS Console / EC2 / Launched Instances](./assets/aws-console-ec2-launched-instances.png)
 
 Note: Your public instance, WebServer, will have an IPv4 Public IP - while your DBServer will not.
 
@@ -415,11 +416,11 @@ This is because we used our default security group when creating the private ins
 
 From the instances page, click on "Security Groups" in the left sidebar.
 
-![./assets/Untitled%2018.png](./assets/Untitled%2018.png)
+![AWS Console / EC2 / Security Groups Sidebar Link](./assets/aws-console-ec2-security-groups-sidebar.png)
 
-Click on "Creates Security Group".
+Click on "Create Security Group".
 
-![./assets/Untitled%2019.png](./assets/Untitled%2019.png)
+![AWS Console / EC2 / Security Groups / Create Security Group Button](./assets/aws-console-ec2-securiyt-groups-create-security-group-button.png)
 
 In the "Create Security Group" modal - you'll want out enable a few inbound rules:
 
@@ -430,23 +431,27 @@ In the "Create Security Group" modal - you'll want out enable a few inbound rule
 
 Each rule should then have a "Custom" source set to our public subnet 10.0.1.0/24. This security group is essentially going to tell our DB server that they allowed inbound communication from our public facing subnet.
 
-![./assets/Untitled%2020.png](./assets/Untitled%2020.png)
+![AWS Console / EC2 / Security Groups / Create Security Group Modal Values](./assets/aws-console-ec2-security-groups-create-security-group-modal-values.png)
 
 Click "Create" and you should see your new security group in the table, like so:
 
-![./assets/Untitled%2021.png](./assets/Untitled%2021.png)
+![AWS Console / EC2 / Security Groups / Table with New Security Group](./assets/aws-console-ec2-security-groups-new-security-group-table.png)
 
 Now, click on "Instances" in the left sidebar.
 
-![./assets/Untitled%2022.png](./assets/Untitled%2022.png)
+![AWS Console / EC2 / Instances in Sidebar link](./assets/aws-console-ec2-instances-sidebar.png)
 
 From here, select the DB server, ours is "awesomesauceDBServer" and click "Actions". In the dropdown, hover over "Networking" and in the sub dropdown - click on "Change Security Group".
 
-![./assets/Untitled%2023.png](./assets/Untitled%2023.png)
+![AWS Console / EC2 / Instances / Change Security Group Action in Dropdown.png](./assets/aws-console-ec2-instances-change-security-group-action.png)
 
 In the "Change Security Groups" mdoal, select the new security group we created and uncheck the default security group.
 
 ![./assets/Screen_Shot_2020-02-09_at_11.03.16_AM.png](./assets/Screen_Shot_2020-02-09_at_11.03.16_AM.png)
+
+When you're done, click on "Assign Security Group".
+
+Next, we'll test that our private subnet can accept inbound communication from our public subnet within our VPC.
 
 ---
 
@@ -491,3 +496,11 @@ The diagram above shows what we have built.
     - That has 10.0.2.0/24 subnet automatically attached to it since this subnet is not associated to any route table
   - A custom route table that does have internet access
     - That also has the 10.0.1.0/24 subnet associated with it
+
+---
+
+<h1 id="references">References</h1>
+
+- [A Cloud Guru - AWS Certified Solutions Architect Associate 2020](https://acloud.guru/learn/aws-certified-solutions-architect-associate)
+- [VPC FAQ's](https://aws.amazon.com/vpc/faqs/)
+- [Amazon Virtual Private Cloud - User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
