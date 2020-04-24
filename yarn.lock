@@ -5574,10 +5574,10 @@ gatsby-plugin-sharp@^2.5.3:
     svgo "1.3.2"
     uuid "^3.4.0"
 
-gatsby-plugin-twitter@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.2.1.tgz#7f953f90a12bf9a3430641b213ab4671d5f22d7a"
-  integrity sha512-y2HvIt4LuINIX5uGFlLdnqbWoteg+Qt/OV/ub2aS412KJ76ofaTwrll+wzYOUw9n3tXWEP9KwKYZsOf7YU+QQA==
+gatsby-plugin-twitter@^2.2.5:
+  version "2.2.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-twitter/-/gatsby-plugin-twitter-2.2.5.tgz#86580549b2d5420c77ff7a76a0e09f9465ff943e"
+  integrity sha512-uxQHeBLm2eqMt/vvZaLtcosG8b2eI9mBfVWsyUk9LdAIVAfc2FYL6OlECzv9JdMbI9VRijoECjC1UwqhZ5bC9Q==
   dependencies:
     "@babel/runtime" "^7.8.7"
 
