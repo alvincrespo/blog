@@ -14,7 +14,7 @@ Not today.
 
 Sometimes, you just want to be able to use modern front-end development tools along with a traditional monolith application. The reality is that, if you want to get going quickly — use what you know. If what you know best is building out apps in monolith architecture, this article is for you.
 
-If you’re interested in jumping into the code immediately — feel free to do so here.
+If you’re interested in jumping into the code immediately — feel free to do so [here](https://github.com/alvincrespo/react-portals-in-rails).
 
 ## Architecture
 
@@ -44,11 +44,11 @@ The additional [Page Refresh] indicates that state is being managed on the backe
 
 So, how can we create a seamless experience within a monolith?
 
-We can build out those experiences inline to a page using React Portals.
+We can build out those experiences inline to a page using [React Portals](https://reactjs.org/docs/portals.html).
 
 ## What are React Portals?
 
-The official React docs define them as:
+The official React [docs](https://reactjs.org/docs/portals.html) define them as:
 
 > Portals provide a first-class way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.
 
@@ -133,7 +133,7 @@ const FormRenderer = ({ display, onSave, onCancel }) => {
 }
 ```
 
-In this FormRenderer , we're returning a portal created at portal-form. This same component is handling whether it should be displayed, returning null if it shouldn't.
+In this `FormRenderer`, we're returning a portal created at `portal-form`. This same component is handling whether it should be displayed, returning `null` if it shouldn't.
 
 Hooking up the plumbing
 
@@ -187,11 +187,13 @@ This requires that you know a little bit about how your monolith app works. For 
 <input type="text" name="user[name]" value="{u.user_name}" hidden readonly />
 ```
 
-The name of this input is important, user[name], because this is how Rails standardizes its forms for consumption by its controller actions by default. If we wanted to customize that name, we would need to update our controller/actions appropriately to look for that custom name in its parameters.
+The name of this input is important, `user[name]`, because this is how Rails standardizes its forms for consumption by its controller actions by default. If we wanted to customize that name, we would need to update our controller/actions appropriately to look for that custom name in its parameters.
 
-Either way, the idea here is to use a solid foundation (Rails) with the latest modern UI development practices (React). In this manner, you have a standard way of building an app — but are not limited in building out complex user interactions.
+_Either way, the idea here is to use a solid foundation (Rails) with the latest modern UI development practices (React)_. In this manner, you have a standard way of building an app — but are not limited in building out complex user interactions.
 
-If you’re looking for an example, you can check out a sample implementation here.
+If you’re looking for an example, you can check out a sample implementation [here](https://github.com/alvincrespo/react-portals-in-rails).
+
+<hr>
 
 I hope you’ve found this useful. Let me know your thoughts in the comments section below and remember to hit that clap button to your left.
 
