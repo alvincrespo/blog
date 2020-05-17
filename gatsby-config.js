@@ -7,6 +7,7 @@ module.exports = {
     social: {
       twitter: `alvincrespo`,
     },
+    image: `https://alvincrespo-blog.s3.us-east-2.amazonaws.com/profile_400x400.jpg`,
   },
   plugins: [
     {
