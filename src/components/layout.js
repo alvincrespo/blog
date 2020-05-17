@@ -6,32 +6,31 @@ import "./layout.css"
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1>
-          <Link to={`/`}>{title}</Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link to={`/`}>{title}</Link>
-        </h3>
-      )
-    }
     return (
-      <div>
-        <header>{header}</header>
+      <>
+        <Header
+          location={location}
+          render={() => (
+            <h1>
+              <Link to={`/`}>{title}</Link>
+            </h1>
+          )}
+        />
         <main>{children}</main>
         <footer>
           <Bio />
         </footer>
-      </div>
+      </>
     )
   }
+}
+
+const Header = ({ location, render = () => {} }) => {
+  const rootPath = `${__PATH_PREFIX__}/`
+  const isRootPath = location.pathname === rootPath
+  const headerClassNames = [isRootPath ? "text-3xl" : "text-2xl"]
+  return <header className={headerClassNames}>{render()}</header>
 }
 
 export default Layout

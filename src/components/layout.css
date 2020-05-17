@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Lato|Permanent+Marker&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h1:hover {
+  color: cyan;
+  text-shadow: 3px 3px #000;
+}

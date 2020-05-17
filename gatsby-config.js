@@ -10,6 +10,7 @@ module.exports = {
     image: `https://alvincrespo-blog.s3.us-east-2.amazonaws.com/profile_400x400.jpg`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
