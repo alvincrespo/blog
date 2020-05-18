@@ -64,8 +64,11 @@ footer {
 
 footer a {
   font-family: "Permanent Marker", cursive;
-  color: chartreuse;
-  text-shadow: 1px 1px #2fc723;
+  color: magenta;
+}
+
+footer a:hover {
+  @apply underline;
 }
 
 header:hover .rocket {
@@ -111,6 +114,44 @@ header:hover .rocket {
 
 .post hr {
   @apply my-4;
+}
+
+.post blockquote {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid cyan;
+  font-family: "Roboto", serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  color: #6b6b6b;
+  background: #f0fdfd;
+  padding: 1rem;
+}
+
+.post blockquote:before,
+.post blockquote:after {
+  content: "\201C";
+  font-family: "Sanchez";
+  font-size: 2rem;
+  color: cyan;
+}
+
+.post blockquote:after {
+  content: "\201D";
+}
+
+.post blockquote p {
+  display: inline;
+}
+
+.post blockquote a {
+  color: magenta;
+}
+
+.post blockquote a:hover {
+  @apply underline;
 }
 
 .to-top {
