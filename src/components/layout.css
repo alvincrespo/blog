@@ -157,6 +157,23 @@ header:hover .rocket {
 .to-top {
   color: magenta;
   font-weight: bold;
+  @apply fixed bottom-0 right-0 mb-2;
+}
+
+@media (min-width: 300px) {
+  .to-top {
+    background: #000;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .to-top {
+    background: none;
+    padding: 0;
+    @apply mr-24;
+  }
 }
 
 .post-nav li {

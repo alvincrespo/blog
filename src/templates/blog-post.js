@@ -22,14 +22,14 @@ class BlogPostTemplate extends React.Component {
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr />
-          <a className="fixed bottom-0 right-0 mb-2 mr-24 to-top" href="#top">
+          <a className="to-top" href="#top">
             Jump to top of page
           </a>
         </article>
 
         <nav className="my-4 post-nav">
-          <ul className="flex flex-row justify-between">
-            <li className="flex flex-row">
+          <ul className="flex flex-col sm:flex-row justify-between items-center sm:items-start">
+            <li className="flex flex-row mb-2">
               ←
               {previous && (
                 <Link
