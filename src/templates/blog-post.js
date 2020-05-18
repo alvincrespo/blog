@@ -27,21 +27,31 @@ class BlogPostTemplate extends React.Component {
           </a>
         </article>
 
-        <nav>
-          <ul>
-            <li>
+        <nav className="my-4 post-nav">
+          <ul className="flex flex-row justify-between">
+            <li className="flex flex-row">
+              ←
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                <Link
+                  to={previous.fields.slug}
+                  rel="prev"
+                  className="block truncate w-64 ml-2 text-left"
+                >
+                  {previous.frontmatter.title}
                 </Link>
               )}
             </li>
-            <li>
+            <li className="flex flex-row">
               {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                <Link
+                  to={next.fields.slug}
+                  rel="next"
+                  className="block truncate w-64 mr-2 text-right"
+                >
+                  {next.frontmatter.title}
                 </Link>
               )}
+              →
             </li>
           </ul>
         </nav>

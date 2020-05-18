@@ -81,6 +81,10 @@ header:hover .rocket {
   @apply mb-4;
 }
 
+.post ol {
+  @apply ml-4 mb-4 list-inside list-decimal;
+}
+
 .post ul {
   @apply ml-4 mb-4 list-inside list-disc;
 }
@@ -112,4 +116,12 @@ header:hover .rocket {
 .to-top {
   color: magenta;
   font-weight: bold;
+}
+
+.post-nav li {
+  color: magenta;
+}
+
+.post-nav li:hover {
+  @apply underline;
 }
