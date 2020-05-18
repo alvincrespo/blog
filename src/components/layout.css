@@ -72,3 +72,44 @@ header:hover .rocket {
   opacity: 1;
   text-shadow: none;
 }
+
+.post header h2 {
+  @apply text-4xl leading-none m-0;
+}
+
+.post p {
+  @apply mb-4;
+}
+
+.post ul {
+  @apply ml-4 mb-4 list-inside list-disc;
+}
+
+.post ul p {
+  @apply m-0 inline;
+}
+
+.post ul a {
+  color: magenta;
+}
+
+.post ul a:hover {
+  @apply underline;
+}
+
+.post h1 {
+  @apply text-3xl mb-4;
+}
+
+.post h2 {
+  @apply text-2xl mb-4;
+}
+
+.post hr {
+  @apply my-4;
+}
+
+.to-top {
+  color: magenta;
+  font-weight: bold;
+}

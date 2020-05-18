@@ -15,13 +15,16 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
-          <header>
-            <h1>{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
+        <article className="post" id="top">
+          <header className="mb-4">
+            <h2 className="text-4xl">{post.frontmatter.title}</h2>
+            <small>{post.frontmatter.date}</small>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr />
+          <a className="fixed bottom-0 right-0 mb-2 mr-24 to-top" href="#top">
+            Jump to top of page
+          </a>
         </article>
 
         <nav>

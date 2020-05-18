@@ -5,12 +5,18 @@ import "./layout.css"
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props
+    const { location, title, children } = this.props
+    const rootPath = `${__PATH_PREFIX__}/`
+    const isRootPath = location.pathname === rootPath
+
+    const headerClassNames = [
+      `${isRootPath ? "text-2xl sm:text-4xl" : "text-xl sm:text-2xl"}`,
+    ]
 
     return (
       <div className="p-6 border-3">
         <header className="mb-6">
-          <h1 className="text-2xl sm:text-4xl">
+          <h1 className={headerClassNames}>
             <Link to={`/`}>{title}</Link>
           </h1>
         </header>
