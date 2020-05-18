@@ -1,69 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Bio from "../components/bio"
-
-import { rhythm, scale } from "../utils/typography"
+import "./layout.css"
 
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const isRootPath = location.pathname === rootPath
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
     return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header>{header}</header>
-        <main>{children}</main>
+      <div className="p-6 border-3">
+        <header className="mb-6">
+          <h1
+            className={
+              isRootPath ? "text-2xl sm:text-4xl" : "text-xl sm:text-2xl"
+            }
+          >
+            <Link to={`/`}>{title}</Link>
+          </h1>
+        </header>
+        <main className="max-w-3xl">{children}</main>
         <footer>
           <Bio />
         </footer>

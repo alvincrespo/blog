@@ -1,9 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,57 +15,43 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article>
-          <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              {post.frontmatter.date}
-            </p>
+        <article className="post" id="top">
+          <header className="mb-4">
+            <h2 className="text-4xl">{post.frontmatter.title}</h2>
+            <small>{post.frontmatter.date}</small>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-              marginBottom: rhythm(1),
-            }}
-          />
+          <hr />
+          <a className="to-top" href="#top">
+            Jump to top of page
+          </a>
         </article>
 
-        <nav>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
+        <nav className="my-4 post-nav">
+          <ul className="flex flex-col sm:flex-row justify-between items-center sm:items-start">
+            <li className="flex flex-row mb-2">
+              ←
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+                <Link
+                  to={previous.fields.slug}
+                  rel="prev"
+                  className="block truncate w-64 ml-2 text-left"
+                >
+                  {previous.frontmatter.title}
                 </Link>
               )}
             </li>
-            <li>
+            <li className="flex flex-row">
               {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+                <Link
+                  to={next.fields.slug}
+                  rel="next"
+                  className="block truncate w-64 mr-2 text-right"
+                >
+                  {next.frontmatter.title}
                 </Link>
               )}
+              →
             </li>
           </ul>
         </nav>

@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Lato|Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h1:hover {
+  color: cyan;
+  text-shadow: 3px 3px #00a5a9;
+}
+
+h2:hover {
+  color: #fd3799;
+  text-shadow: 2px 2px #e627e5;
+}
+
+small,
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+}
+
+@media (min-width: 300px) {
+  html {
+    border-top: 6px solid cyan;
+  }
+
+  body {
+    border-top: 12px solid magenta;
+  }
+
+  div.border-3 {
+    border-top: 24px solid chartreuse;
+  }
+}
+
+@media (min-width: 640px) {
+  html {
+    border-right: 12px solid cyan;
+  }
+
+  body {
+    border-right: 24px solid magenta;
+  }
+
+  div.border-3 {
+    border-right: 48px solid chartreuse;
+  }
+}
+
+footer a {
+  font-family: "Permanent Marker", cursive;
+  color: magenta;
+}
+
+footer a:hover {
+  @apply underline;
+}
+
+header:hover .rocket {
+  opacity: 1;
+  text-shadow: none;
+}
+
+.post header h2 {
+  @apply text-4xl leading-none m-0;
+}
+
+.post p {
+  @apply mb-4;
+}
+
+.post ol {
+  @apply ml-4 mb-4 list-inside list-decimal;
+}
+
+.post ul {
+  @apply ml-4 mb-4 list-inside list-disc;
+}
+
+.post ul p {
+  @apply m-0 inline;
+}
+
+.post ul a {
+  color: magenta;
+}
+
+.post ul a:hover {
+  @apply underline;
+}
+
+.post h1 {
+  @apply text-3xl mb-4;
+}
+
+.post h2 {
+  @apply text-2xl mb-4;
+}
+
+.post hr {
+  @apply my-4;
+}
+
+.post blockquote {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid cyan;
+  font-family: "Roboto", serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  color: #6b6b6b;
+  background: #f0fdfd;
+  padding: 1rem;
+}
+
+.post blockquote:before,
+.post blockquote:after {
+  content: "\201C";
+  font-family: "Sanchez";
+  font-size: 2rem;
+  color: cyan;
+}
+
+.post blockquote:after {
+  content: "\201D";
+}
+
+.post blockquote p {
+  display: inline;
+}
+
+.post blockquote a {
+  color: magenta;
+}
+
+.post blockquote a:hover {
+  @apply underline;
+}
+
+.to-top {
+  color: magenta;
+  font-weight: bold;
+  @apply fixed bottom-0 right-0 mb-2;
+}
+
+@media (min-width: 300px) {
+  .to-top {
+    background: #000;
+    padding: 0.5rem 1rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .to-top {
+    background: none;
+    padding: 0;
+    @apply mr-24;
+  }
+}
+
+.post-nav li {
+  color: magenta;
+}
+
+.post-nav li:hover {
+  @apply underline;
+}
