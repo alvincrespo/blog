@@ -32,15 +32,6 @@ h6 a:hover {
   text-decoration: underline;
 }
 
-footer a {
-  font-family: "Permanent Marker", cursive;
-  color: magenta;
-}
-
-footer a:hover {
-  @apply underline;
-}
-
 header:hover .rocket {
   opacity: 1;
   text-shadow: none;
