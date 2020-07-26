@@ -2,64 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css?family=Lato|Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
 
 h1,
 h2,
 h3,
 h4,
 h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
 h6 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Rowdies", cursive;
 }
 
-h1:hover {
-  color: cyan;
-  text-shadow: 3px 3px #00a5a9;
-}
-
-h2:hover {
-  color: #fd3799;
-  text-shadow: 2px 2px #e627e5;
-}
-
-small,
-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-footer {
-}
-
-@media (min-width: 300px) {
-  html {
-    border-top: 6px solid cyan;
-  }
-
-  body {
-    border-top: 12px solid magenta;
-  }
-
-  div.border-3 {
-    border-top: 24px solid chartreuse;
-  }
-}
-
-@media (min-width: 640px) {
-  html {
-    border-right: 12px solid cyan;
-  }
-
-  body {
-    border-right: 24px solid magenta;
-  }
-
-  div.border-3 {
-    border-right: 48px solid chartreuse;
-  }
+a:hover {
+  color: #8a8a8a;
 }
 
 footer a {
