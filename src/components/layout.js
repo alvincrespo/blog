@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div className="flex flex-col items-center">
       <Header />
-      <main className="max-w-3xl">{children}</main>
+      <main className="w-full max-w-screen-lg">{children}</main>
       <footer>
         <Bio />
       </footer>

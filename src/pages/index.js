@@ -12,33 +12,40 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug} className="mb-6 mx-4">
-              <header className="flex flex-row items-center mb-4">
-                <h2 className="text-3xl sm:text-4xl leading-none ">
-                  <Link to={node.fields.slug}>{title}</Link>
-                  <span
-                    className="opacity-0 rocket text-2xl ml-4 "
-                    role="img"
-                    aria-label="Rocket"
-                  >
-                    🚀
-                  </span>
-                </h2>
-              </header>
-              <section>
-                <p
-                  className="text-md"
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
+        <div className="my-6">
+          <section class="mb-6">
+            <h2 class="text-5xl tracking-tight leading-none uppercase">
+              Alvin Crespo // Blog
+            </h2>
+          </section>
+          {posts.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug
+            return (
+              <article key={node.fields.slug} className="p-4 my-6">
+                <header className="flex flex-row items-center mb-4">
+                  <h2 className="text-3xl sm:text-4xl leading-none text-deeppink">
+                    <Link to={node.fields.slug}>{title}</Link>
+                    <span
+                      className="opacity-0 rocket text-2xl ml-4 "
+                      role="img"
+                      aria-label="Rocket"
+                    >
+                      🚀
+                    </span>
+                  </h2>
+                </header>
+                <section>
+                  <p
+                    className="text-md"
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description || node.excerpt,
+                    }}
+                  />
+                </section>
+              </article>
+            )
+          })}
+        </div>
       </Layout>
     )
   }

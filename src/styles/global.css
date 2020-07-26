@@ -18,12 +18,18 @@ h2 a,
 h3 a,
 h4 a,
 h5 a,
-h6 {
+h6 a {
   font-family: "Rowdies", cursive;
 }
 
-a:hover {
-  color: #8a8a8a;
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-shadow: 2px 2px 0px gainsboro;
+  text-decoration: underline;
 }
 
 footer a {
@@ -38,6 +44,7 @@ footer a:hover {
 header:hover .rocket {
   opacity: 1;
   text-shadow: none;
+  text-decoration: none;
 }
 
 .post header h2 {
