@@ -15,46 +15,56 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article className="post" id="top">
-          <header className="mb-4">
-            <h2 className="text-4xl">{post.frontmatter.title}</h2>
-            <small>{post.frontmatter.date}</small>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr />
-          <a className="to-top" href="#top">
-            Jump to top of page
-          </a>
-        </article>
+        <div className="my-6">
+          <section class="mb-6">
+            <h2 class="text-5xl tracking-tight leading-none uppercase">
+              Alvin Crespo // Blog
+            </h2>
+          </section>
 
-        <nav className="my-4 post-nav">
-          <ul className="flex flex-col sm:flex-row justify-between items-center sm:items-start">
-            <li className="flex flex-row mb-2">
-              ←
-              {previous && (
-                <Link
-                  to={previous.fields.slug}
-                  rel="prev"
-                  className="block truncate w-64 ml-2 text-left"
-                >
-                  {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li className="flex flex-row">
-              {next && (
-                <Link
-                  to={next.fields.slug}
-                  rel="next"
-                  className="block truncate w-64 mr-2 text-right"
-                >
-                  {next.frontmatter.title}
-                </Link>
-              )}
-              →
-            </li>
-          </ul>
-        </nav>
+          <article className="post" id="top">
+            <header className="mb-4">
+              <h3 className="text-4xl text-gray-800">
+                {post.frontmatter.title}
+              </h3>
+              <small>{post.frontmatter.date}</small>
+            </header>
+            <section dangerouslySetInnerHTML={{ __html: post.html }} />
+            <hr />
+            <a className="to-top" href="#top">
+              Jump to top of page
+            </a>
+          </article>
+
+          <nav className="py-8 post-nav">
+            <ul className="flex flex-col sm:flex-row justify-between items-center sm:items-start">
+              <li className="flex flex-row mb-2">
+                ←
+                {previous && (
+                  <Link
+                    to={previous.fields.slug}
+                    rel="prev"
+                    className="block truncate w-64 ml-2 text-left"
+                  >
+                    {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li className="flex flex-row">
+                {next && (
+                  <Link
+                    to={next.fields.slug}
+                    rel="next"
+                    className="block truncate w-64 mr-2 text-right"
+                  >
+                    {next.frontmatter.title}
+                  </Link>
+                )}
+                →
+              </li>
+            </ul>
+          </nav>
+        </div>
       </Layout>
     )
   }
