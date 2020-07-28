@@ -13,7 +13,7 @@ Today, I'm going to show you how to use [DatoCMS](https://www.datocms.com/) to m
 
 Here's what you need to be familiar with:
 
-- <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript</a>
+- <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript</a> (obviously)
 - <a href="https://blog.hubspot.com/blog/tabid/6307/bid/7969/what-is-a-cms-and-why-should-you-care.aspx" target="_blank" rel="noopener noreferrer">CMS Concepts</a>
 - <a href="https://www.gatsbyjs.org/docs/" target="_blank" rel="noopener noreferrer">Gatsby.js</a>
 - <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>
@@ -461,9 +461,7 @@ Note: Your design will look totally different. I'm using [Tailwind](https://tail
 
 <h1>🚀 🚀 🚀 Congrats! You've made it! 🚀 🚀 🚀 </h1>
 
-<img src="https://media0.giphy.com/media/Y0dubi7KjmXn2/giphy.gif?cid=ecf05e47ehbfewzce07j5rjirv428yyxcp3d767uwb2fer5f&rid=giphy.gif" width="100%" />
-<br>
-<h1>What we learned</h1>
+<h2>What we learned</h2>
 
 - Data modeling
 - DatoCMS' Capabilities
