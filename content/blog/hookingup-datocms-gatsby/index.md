@@ -1,8 +1,9 @@
 ---
 title: Hooking up DatoCMS and Gatsby.js
 date: "2020-07-27T06:54:00.000Z"
-description:
+description: Hook up DatoCMS and Gatsby.js to automate your landing page workflow. We'll use DatoCMS to manage our content and Gatsby to display it, using GraphQL to ultimately connect both platforms - making it easy for you to iterate quickly.
 tags: gatsbyjs,datocms,jamstack,javascript
+image: https://alvincrespo-blog.s3.us-east-2.amazonaws.com/hookingup-datocms-gatsby/twitter-datocms-and-gatsby.png
 ---
 
 Want to ship landing pages easily? Cool. Let's do it.
