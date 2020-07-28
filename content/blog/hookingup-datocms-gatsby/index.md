@@ -239,25 +239,256 @@ I'm simply going to have you run:
 CMS_TOKEN=MY_API_TOKEN yarn develop
 ```
 
+Note: Update `MY_API_TOKEN` with the token you copied earlier.
+
 You won't notice any changes yet because we haven't really done anything user facing yet. Let's push forward!
 
 <h1 id="gatsbyjs-exploring-the-playground">Gatsby.js - Exploring the Playground</h1>
 
-<div class="rounded-md bg-pink-200 p-4 my-8">
+Let's take a moment to understand how we can interact with DatoCMS's api using GraphQL. The best part about using Gatsby.js is that you get GraphQL for free and in order to start experimenting with it - you just need to use the built-in playground.
+
+So, let's run the app:
+
+```
+CMS_TOKEN=MY_API_TOKEN yarn develop
+```
+
+Note: Update `MY_API_TOKEN` with the token you copied earlier.
+
+Once that app is running, you can visit [http://localhost:8000/\_\_graphql](http://localhost:8000/__graphql)
+
+You should see:
+
+![](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/hookingup-datocms-gatsby/Screen+Shot+2020-07-28+at+7.53.31+AM.png)
+
+In the playground you can experiment with all the queries available to you, including this one:
+
+![](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/hookingup-datocms-gatsby/Screen+Shot+2020-07-28+at+7.58.10+AM.png)
+
+The above query fetches all our cover letters.
+
+You can also fetch per the slug field we defined earlier:
+
+![](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/hookingup-datocms-gatsby/Screen+Shot+2020-07-28+at+8.00.34+AM.png)
+
+Cool right?! Yeah..very cool!
+
+<div class="rounded-md bg-teal-200 p-4 my-8">
   <div class="flex">
     <div class="ml-3">
-      <h3 class="text-sm leading-5 font-medium text-pink-800 uppercase">
-        Work in progress
+      <h3 class="text-sm leading-5 font-medium text-teal-800 uppercase">
+        Break Time!
       </h3>
-      <div class="mt-2 text-sm leading-5 text-pink-700">
+      <div class="mt-2 text-sm leading-5 text-teal-700">
         <p>
-          That's all for now. I'll be adding more content to this article soon. [Updated On July 27, 2020]
+          This is a good time to take a break. If you haven't already, put in some content into DatoCMS!
         </p>
       </div>
     </div>
   </div>
 </div>
 
+<h1 id="gatsbyjs-hooking-up-the-plumbing">DatoCMS + Gatsby.js - The Perfect Match</h1>
+
+Alright. So we installed and configured DatoCMS + Gatsby.js. We added some content to DatoCMS. Now we're ready to connect the dots.
+
+<h2 id="gatsby-creating-dynamic-pages">Gatsby.js - Creating Dynamic Pages</h2>
+
+Firs things first. We need to retrieve the content from DatoCMS and create landing pages. This requires us to tap into Gatsby.js' API. Specifically, we'll need to use the [`createPages`](https://www.gatsbyjs.org/docs/node-apis/#createPages) function.
+
+So let's go to `gatsby-node.js` and drop in the following snippet:
+
+```javascript
+const path = require(`path`)
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  return new Promise((resolve) => {
+    graphql('
+      {
+        allDatoCmsCoverletter {
+          edges {
+            node {
+              slug
+            }
+          }
+        }
+      }
+    ').then((result) => {
+      result.data.allDatoCmsCoverletter.edges.map(({ node: coverletter }) => {
+        createPage({
+          path: `applications/${coverletter.slug}`,
+          component: path.resolve(`./src/templates/coverletter-page.js`),
+          context: {
+            slug: coverletter.slug,
+          },
+        })
+      })
+      resolve()
+    })
+  })
+}
+```
+
+Credit: <a class="text-deeppink hover:underline" href="https://github.com/datocms/gatsby-portfolio/blob/master/src/templates/work.js" target="_blank" rel="noopener noreferrer">DatoCMS - Gatsby Portfolio Example</a>
+
+So, what does this do?
+
+- It uses the `allDatoCmsCoverletter` query (from `gatsby-source-datocms`) to retrieve all our data
+- Once we get the results, we use `createPage` to set a path, define the component to use (which we have not defined yet) and provide the context/slug for that page
+
+Essentially, this allows us to visit `http://localhost:8000/applications/COVERLETTER_SLUG` - where `COVERLETTER_SLUG` is the slug field value for a CoverLetter instance in DatoCMS.
+
+TL;DR - It brings in the content from a model instance like this one:
+
+![](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/hookingup-datocms-gatsby/Screen+Shot+2020-07-28+at+8.26.11+AM.png)
+
+<h2 id="gatsby-creating-dynamic-pages">Gatsby.js - Defining the template</h2>
+
+So we're dynamically creating pages from content defined in DatoCMS - great! Now we need to define the template above so we can render that content.
+
+First, create a directory called `templates` inside of `src`. Then, add the file `coverletter-page.js` inside of `templates`.
+
+For confirmation, you should have the following file: `src/templates/coverletter-page.js`.
+
+This is the file that will render the content from DatoCMS. So you can style it anyway you want. We're going to keep it simple:
+
+```javascript
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
+
+const CoverLetter = ({ data }) => {
+  return (
+    <Layout>
+      <div className="my-6">
+        <section className="mb-6">
+          <h2 className="text-5xl tracking-tight leading-none uppercase text-center">
+            {data.datoCmsCoverletter.companyName} //{" "}
+            {data.datoCmsCoverletter.jobTitle}
+          </h2>
+        </section>
+
+        {/* SECTION: Introduction  */}
+        <div
+          dangerouslySetInnerHTML={{
+            __html: data.datoCmsCoverletter.introduction,
+          }}
+        />
+
+        {/* SECTION: Skills */}
+        <div className="my-10 px-4">
+          <h3 className="text-base uppercase">My Skills</h3>
+          <div className="mt-10">
+            <ul className="grid grid-cols-2 col-gap-8 row-gap-10">
+              {data.datoCmsCoverletter.skills.map((s) => (
+                <li>
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <div
+                        className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+                        dangerouslySetInnerHTML={{
+                          __html: s.icon.svg,
+                        }}
+                      ></div>
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="text-lg leading-6 font-medium text-gray-900">
+                        {s.name}
+                      </h4>
+                      <p
+                        className="mt-2 text-base leading-6 text-gray-500"
+                        dangerouslySetInnerHTML={{
+                          __html: s.description,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* SECTION: FAQs */}
+        <div className="my-10 px-4">
+          <h3 className="text-base uppercase">Frequently Asked Questions</h3>
+          <div className="mt-10">
+            <dl className="grid grid-cols-2 gap-8">
+              {data.datoCmsCoverletter.frequentlyAskedQuestions.map((faq) => (
+                <div>
+                  <dt className="text-lg leading-6 font-medium text-gray-900">
+                    {faq.question}
+                  </dt>
+                  <dd className="mt-2">
+                    <p
+                      className="text-base leading-6 text-gray-500"
+                      dangerouslySetInnerHTML={{
+                        __html: faq.answer,
+                      }}
+                    ></p>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+export default CoverLetter
+
+export const query = graphql'
+  query GetCoverLetter($slug: String!) {
+    datoCmsCoverletter(slug: { eq: $slug }) {
+      id
+      jobTitle
+      companyName
+      introduction
+      skills {
+        name
+        description
+        icon {
+          svg
+        }
+      }
+      frequentlyAskedQuestions {
+        question
+        answer
+      }
+    }
+  }
+'
+```
+
+Note: We're using `dangerouslySetInnerHTML` in order to render HTML content that we have filled in DatoCMS.
+
+Ok. So if you're ready - I'm ready! Let's restart the app and load up [http://localhost:8000](http://localhost:8000).
+
+You should see something like this:
+
+![](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/hookingup-datocms-gatsby/Screen+Shot+2020-07-28+at+8.39.46+AM.png)
+
+Note: Your design will look totally different. I'm using [Tailwind](https://tailwindcss.com/) + [TailwindUI](https://tailwindui.com/) on my personal site - which is why it looks the way that it does above.
+
+<h1>🚀 🚀 🚀 Congrats! You've made it! 🚀 🚀 🚀 </h1>
+
+<img src="https://media0.giphy.com/media/Y0dubi7KjmXn2/giphy.gif?cid=ecf05e47ehbfewzce07j5rjirv428yyxcp3d767uwb2fer5f&rid=giphy.gif" width="100%" />
+<br>
+<h1>What we learned</h1>
+
+- Data modeling
+- DatoCMS' Capabilities
+- Integrating DatoCMS with Gatsby.js
+- Gatsby.js API using `createPages` and `createPage`
+- GraphQL fetching and slug matching
+
+and ultimately - enabling us to automate our processes for <strong>faster</strong> and more <strong>reliable</strong> delivery using a JAMStack.
+
+<hr>
 <h1 id="references">References</h1>
 
 - <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript</a>
@@ -267,10 +498,12 @@ You won't notice any changes yet because we haven't really done anything user fa
 - <a href="https://graphql.org/" target="_blank" rel="noopener noreferrer">GraphQL</a>
 - <a href="https://jamstack.wtf/" target="_blank" rel="noopener noreferrer">JAMStack</a>
 - <a href="https://www.talend.com/resources/what-is-data-modeling/" target="_blank" rel="noopener noreferrer">Data Modeling: Ensuring Data You Can Trust</a>
-- <a href="https://github.com/datocms/gatsby-portfolio/blob/master/src/templates/work.js" target="_blank" rel="noopener noreferrer">Github: datocms / gatsby-portfolio</a>
+- <a href="https://github.com/datocms/gatsby-portfolio" target="_blank" rel="noopener noreferrer">Github: datocms / gatsby-portfolio</a>
 - <a href="https://www.datocms.com/docs/content-delivery-api/how-to-fetch-records" target="_blank" rel="noopener noreferrer">How to fetch records</a>
 - <a href="https://www.gatsbyjs.org/docs/using-graphql-playground/" target="_blank" rel="noopener noreferrer">Gatsby: Using the GraphQL Playground</a>
 - <a href="https://www.datocms.com/blog/rich-content-editing" target="_blank" rel="noopener noreferrer">Allowing rich-text editing within DatoCMS</a>
 - <a href="https://www.datocms.com/docs/content-modelling/links" target="_blank" rel="noopener noreferrer">DatoCM - Link fields</a>
 - <a href="https://github.com/datocms/gatsby-source-datocms" target="_blank" rel="noopener noreferrer">Github: datocms / gatsby-source-datocms</a>
-- <a href="https://github.com/motdotla/dotenv" target="_blank" rel="noopener norerrer">Github: motdotla / dotenv</a>
+- <a href="https://github.com/motdotla/dotenv" target="_blank" rel="noopener noreferrer">Github: motdotla / dotenv</a>
+- <a href="https://www.gatsbyjs.org/docs/node-apis" target="_blank" rel="noopener noreferrer">Gatsby Node APIs</a>
+- <a href="https://www.gatsbyjs.org/tutorial/part-seven/" target="_blank" rel="noopener noreferrer">Programmatically create pages from data</a>
