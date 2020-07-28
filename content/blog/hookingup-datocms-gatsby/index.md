@@ -1,5 +1,5 @@
 ---
-title: Hooking up DatoCMS and Gatsby.js [WIP]
+title: Hooking up DatoCMS and Gatsby.js
 date: "2020-07-27T06:54:00.000Z"
 description:
 tags: gatsbyjs,datocms,jamstack,javascript
