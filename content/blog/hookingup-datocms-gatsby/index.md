@@ -5,21 +5,6 @@ description:
 tags: gatsbyjs,datocms,jamstack,javascript
 ---
 
-<div class="rounded-md bg-pink-200 p-4 my-8">
-  <div class="flex">
-    <div class="ml-3">
-      <h3 class="text-sm leading-5 font-medium text-pink-800 uppercase">
-        Work in progress
-      </h3>
-      <div class="mt-2 text-sm leading-5 text-pink-700">
-        <p>
-          I'm currently writing this up. It is incomplete - but feel free to read.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
 Want to ship landing pages easily? Cool. Let's do it.
 
 Today, I'm going to show you how to use [DatoCMS](https://www.datocms.com/) to manage your content and [Gatsby.js](https://www.gatsbyjs.org/) to run it.
