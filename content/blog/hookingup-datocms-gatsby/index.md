@@ -37,7 +37,7 @@ Alright, so let's start with the value proposition for why and what we're buildi
 
 > My name is Juan. I'm on the market for my next engineering role. I want to stand out in the process, instead of sending out a cover letter I'm going to create a landing page and send that with each job application.
 
-Cool. So, we have a bunch of options out there. We can use Wix, Wordpress, etc... But - nah. We're going to use Gatsby, DatoCMS and Netlify. Why?
+Cool. So, we have a bunch of options out there. We can use Wix, Wordpress, etc... But - nah. We're going to use Gatsby + DatoCMS. Why?
 
 - Cost effective (free packages on all services)
 - Easy customization (more control over the code)
