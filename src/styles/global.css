@@ -79,7 +79,7 @@ header:hover .rocket {
   @apply my-4;
 }
 
-.post blockquote {
+.post blockquote:not(.twitter-tweet) {
   position: relative;
   padding-left: 1em;
   border-left: 0.2em solid cyan;
@@ -145,4 +145,8 @@ header:hover .rocket {
 
 .post-nav li:hover {
   @apply underline;
+}
+
+.twitter-tweet {
+  @apply m-auto;
 }
