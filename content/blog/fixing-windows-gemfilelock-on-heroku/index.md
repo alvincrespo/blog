@@ -63,7 +63,7 @@ Notice how we're removing platform specific builds? That's what we want! 🎆�
 
 ## Congrats!
 
-There you go! You've fixed the warning from Heroku an
+There you go! You've fixed the warning. Keep going 💪 💪 💪
 
 ## References
 
