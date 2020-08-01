@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <article key={node.fields.slug} className="p-4 my-6">
+              <article key={node.fields.slug} className="py-4 my-6">
                 <header className="flex flex-row items-center mb-4">
                   <h2 className="text-3xl sm:text-4xl leading-none text-deeppink">
                     <Link to={node.fields.slug}>{title}</Link>
