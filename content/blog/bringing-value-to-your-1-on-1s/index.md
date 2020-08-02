@@ -3,6 +3,7 @@ title: Effective One-on-One Meetings with Engineers
 date: "2020-08-02T13:00:00.000Z"
 description: Conducting one-on-ones should have the goal of surfacing successes, failures improvements within an organization. In this article, I'm going to go into what makes a good one-on-one experience and how to get the most of it from your reports.
 tags: people management,management,engineering,one-on-one
+image: https://alvincrespo-blog.s3.us-east-2.amazonaws.com/bringing-value-to-your-1-on-1s/twitter-one-on-ones.jpg
 ---
 
 ## Owning your responsibility as a Manager
