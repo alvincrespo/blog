@@ -49,7 +49,7 @@ tags: leadership,business,extreme ownership,notes,ego
   <li>Everyone has ego</li>
   <li>Ego can be used for good</li>
   <li>
-    Controlling ego taks:
+    Controlling ego takes:
     <ul>
       <li>Acceptance</li>
       <li>Ownership</li>
