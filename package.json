@@ -18,7 +18,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.32",
     "gatsby-plugin-twitter": "^2.3.10",
-    "gatsby-remark-copy-linked-files": "^2.3.14",
+    "gatsby-remark-copy-linked-files": "^2.3.17",
     "gatsby-remark-images": "^3.3.29",
     "gatsby-remark-images-zoom": "^1.1.0",
     "gatsby-remark-prismjs": "^3.5.11",
