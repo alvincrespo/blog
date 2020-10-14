@@ -1,8 +1,8 @@
 ---
 title: Thoughts on Technology Choices
 date: "2020-10-14T10:00:00.000Z"
-description: Automated testing may not seem worth it - but its absolutely critical at any stage of your product lifecycle. Check out this post on why I think you should start automatically testing your app today.
-tags: testing,automated testing,reasoning
+description: The technology you choose to build your product in is a critical one. That's why it's so important to understand the context in which this decision gets made. In today's thought piece I talk about what guides me and how I think through these kinds of decisions.
+tags: technology,frameworks,decision making
 ---
 
 ## Guiding Principle
