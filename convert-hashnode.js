@@ -9,7 +9,13 @@ const data = JSON.parse(fs.readFileSync(exportPath, 'utf8'));
 const post = data.posts[0];
 
 // Extract relevant fields
-const { title, dateAdded, brief, slug, contentMarkdown } = post;
+let { title, dateAdded, brief, slug, contentMarkdown } = post;
+
+// Sanitize description: remove newlines and escape quotes
+const description = brief.replace(/\n/g, ' ').replace(/"/g, '\\"');
+
+// Fix Hashnode image format: remove align="center" attribute
+const fixedContent = contentMarkdown.replace(/ align="center"/g, '');
 
 // Create the blog directory
 const blogDir = path.join(__dirname, 'blog', slug);
@@ -21,13 +27,13 @@ if (!fs.existsSync(blogDir)) {
 const frontmatter = `---
 title: ${title}
 date: "${dateAdded}"
-description: ${brief}
+description: "${description}"
 tags:
 ---
 `;
 
 // Combine frontmatter + content
-const markdown = frontmatter + '\n' + contentMarkdown;
+const markdown = frontmatter + '\n' + fixedContent;
 
 // Write the markdown file
 const indexPath = path.join(blogDir, 'index.md');
