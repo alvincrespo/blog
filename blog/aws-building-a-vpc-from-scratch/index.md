@@ -46,23 +46,23 @@ Below is a Table of Contents (TOC) for you to easily dive through each section a
 
 Go to VPC
 
-![AWS Console Menu / Networking & Content Delivery / VPC](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348905403/c672dc5d-9124-4da0-a6f9-4bed6ecc1862.png align="left")
+![AWS Console Menu / Networking & Content Delivery / VPC](./c672dc5d-9124-4da0-a6f9-4bed6ecc1862.png)
 
 Click on "Your VPC's"
 
-![AWS Console / Virtual Private Cloud / Your VPC's](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348906978/e9c0e7af-5d32-49c3-9736-66eb8b980e15.png align="left")
+![AWS Console / Virtual Private Cloud / Your VPC's](./e9c0e7af-5d32-49c3-9736-66eb8b980e15.png)
 
 Click on "Create VPC"
 
-![AWS Console / Virtual Private Cloud / Your VPC's / Create VPC](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348908716/d2261bd7-4c32-4e79-a142-790c09d060d2.png align="left")
+![AWS Console / Virtual Private Cloud / Your VPC's / Create VPC](./d2261bd7-4c32-4e79-a142-790c09d060d2.png)
 
 Fill in the form. Specifying the proper CIDR block and selecting "Amazon Provided IPv6 CIDR block"
 
-![AWS Console / Virtual Private Cloud / Create VPC](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348910415/fa1e80d4-1ec8-4f98-9b54-69219ed90c7c.png align="left")
+![AWS Console / Virtual Private Cloud / Create VPC](./fa1e80d4-1ec8-4f98-9b54-69219ed90c7c.png)
 
 Click "Create"
 
-![AWS Console / Virtual Private Cloud / Create VPC / Success](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348911872/52a754ef-f69a-4406-b487-768e2b44aeb6.png align="left")
+![AWS Console / Virtual Private Cloud / Create VPC / Success](./52a754ef-f69a-4406-b487-768e2b44aeb6.png)
 
 ---
 
@@ -72,57 +72,57 @@ Click "Create"
 
 Navigate to "Subnets"
 
-![AWS Console / Virtual Private Cloud / Subnets](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348913656/8da90e72-2434-4f55-a960-0fda17353c1b.png align="left")
+![AWS Console / Virtual Private Cloud / Subnets](./8da90e72-2434-4f55-a960-0fda17353c1b.png)
 
 Click "Create subnet"
 
-![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Button](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348915301/f15072e2-25a5-4ea1-bd71-fdf8a4375c09.png align="left")
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Button](./f15072e2-25a5-4ea1-bd71-fdf8a4375c09.png)
 
 You should now see the "Create subnet" workflow:
 
-![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Screen](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348917015/09f2abe4-ddfc-4388-a597-2cf59b927325.png align="left")
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Screen](./09f2abe4-ddfc-4388-a597-2cf59b927325.png)
 
 Fill In fields, like so:
 
-![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Screen / Filled In](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348918847/2dbd3081-9fbb-48e9-a44c-f6d85f8c773c.png align="left")
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet Screen / Filled In](./2dbd3081-9fbb-48e9-a44c-f6d85f8c773c.png)
 
 Click "Create"
 
-![AWS Console / Virtual Private Cloud / Subnets / Create Subnet / Success](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348920404/e2662673-7408-4be1-a9b4-36d688ec7ade.png align="left")
+![AWS Console / Virtual Private Cloud / Subnets / Create Subnet / Success](./e2662673-7408-4be1-a9b4-36d688ec7ade.png)
 
-![AWS Console / Virtual Private Cloud / Subnets / Subnets / With New Subnet](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348922177/b893b6be-2647-4ae3-bd58-0e09be715a42.png align="left")
+![AWS Console / Virtual Private Cloud / Subnets / Subnets / With New Subnet](./b893b6be-2647-4ae3-bd58-0e09be715a42.png)
 
 ## Create Private Subnet
 
 Click "Create subnet"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348923809/21c1b15a-9987-4ac5-b2a2-9c5708f18d75.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.20.46_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348923809/21c1b15a-9987-4ac5-b2a2-9c5708f18d75.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.20.46_AM.png)
 
 Click "Create"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348925403/5f257ecc-b819-4aca-bb36-e61f7d28295c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.20.50_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348925403/5f257ecc-b819-4aca-bb36-e61f7d28295c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.20.50_AM.png)
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348926751/50a1e361-bf64-4078-a6e9-62cb5c060c0a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.20.55_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348926751/50a1e361-bf64-4078-a6e9-62cb5c060c0a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.20.55_AM.png)
 
 ## Enable Public IP on Public Subnet
 
 Select the public subnet
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348928392/5b25578b-abc5-4faa-8cc0-a5951d278022.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.20_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348928392/5b25578b-abc5-4faa-8cc0-a5951d278022.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.20_AM.png)
 
 Click Actions and select "modify auto-assign IP settings"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348930357/a4ba48db-d412-4369-bf9a-8e50d1664ba1.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.24_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348930357/a4ba48db-d412-4369-bf9a-8e50d1664ba1.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.24_AM.png)
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348932246/0621c6cb-b243-4397-9b99-d45748dfb82a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.27_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348932246/0621c6cb-b243-4397-9b99-d45748dfb82a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.27_AM.png)
 
 Select "Enable auto-assign public IPv4 address" and Click "Save"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348933932/dd341c3e-ad88-4753-8ea8-e4fe43d364eb.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.31_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348933932/dd341c3e-ad88-4753-8ea8-e4fe43d364eb.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.31_AM.png)
 
 You can now verify that the public subnet has an auto-assigned public IP address
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348935359/e1c0ab7f-6103-4c11-a7e6-cfdc4bc2b05f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.44_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348935359/e1c0ab7f-6103-4c11-a7e6-cfdc4bc2b05f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.26.44_AM.png)
 
 ---
 
@@ -130,37 +130,37 @@ You can now verify that the public subnet has an auto-assigned public IP address
 
 Navigate to "Internet Gateways"
 
-![AWS Console / Virtual Private Cloud / Internet Gateways / Sidebar](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348937265/c33175db-aef7-4e2a-abaa-9a19a90ede70.png align="left")
+![AWS Console / Virtual Private Cloud / Internet Gateways / Sidebar](./c33175db-aef7-4e2a-abaa-9a19a90ede70.png)
 
 Click "Create Internet gateway"
 
-![AWS Console / Virtual Private Cloud / Internet Gateways / Create Internet Gateway Button](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348939141/3ca869dd-74e5-4dd7-858d-883c6d213b55.png align="left")
+![AWS Console / Virtual Private Cloud / Internet Gateways / Create Internet Gateway Button](./3ca869dd-74e5-4dd7-858d-883c6d213b55.png)
 
 Give your new internet gateway a name
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348940844/6ef87550-a332-4a78-a86c-cea31aab7d25.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.19_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348940844/6ef87550-a332-4a78-a86c-cea31aab7d25.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.19_AM.png)
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348942337/b36ae25a-f339-4fde-9b48-200d06d894a0.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.23_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348942337/b36ae25a-f339-4fde-9b48-200d06d894a0.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.23_AM.png)
 
 Your new internet gateway will be "detached"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348943994/1e55c4e7-18eb-4215-821f-62c5f87a552f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.32_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348943994/1e55c4e7-18eb-4215-821f-62c5f87a552f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.32_AM.png)
 
 Select your new "detached" internet gateway
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348945618/b28b02c1-248c-4be8-b772-d7da78729e58.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.35_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348945618/b28b02c1-248c-4be8-b772-d7da78729e58.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.35_AM.png)
 
 Click "Actions" and select "Attach to VPC"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348947302/b4b0f57a-8171-4f71-9c07-d9744f83b50d.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.38_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348947302/b4b0f57a-8171-4f71-9c07-d9744f83b50d.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.38_AM.png)
 
 Attach the internet gateway to your new VPC
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348948842/205ea862-7215-43a2-b2b9-43c678a3e883.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.47_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348948842/205ea862-7215-43a2-b2b9-43c678a3e883.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.27.47_AM.png)
 
 Click "Attach" and you should then see your new internet gateway attached to your VPC
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348950255/ee9ca868-f6d6-44b2-9878-c18d23514780.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.28.31_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348950255/ee9ca868-f6d6-44b2-9878-c18d23514780.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.28.31_AM.png)
 
 ---
 
@@ -170,79 +170,79 @@ We need to configure our main route to go out to the internet.
 
 Currently it is configured to have any subnet communicate with each other:
 
-![AWS Console / Virtual Private Cloud / Route Tables / Main Route Table Routes](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348952310/b93622c0-6861-455a-883b-cdd538901fc8.png align="left")
+![AWS Console / Virtual Private Cloud / Route Tables / Main Route Table Routes](./b93622c0-6861-455a-883b-cdd538901fc8.png)
 
 Both existing subnets have also been, by default, associated to main routing table:
 
-![AWS Console / Virtual Private Cloud / Route Tables / Main Route Table Subnet Associations](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348953918/0c180728-11db-4d73-a2a6-559b3b87a0dc.png align="left")
+![AWS Console / Virtual Private Cloud / Route Tables / Main Route Table Subnet Associations](./0c180728-11db-4d73-a2a6-559b3b87a0dc.png)
 
 Note: We do **NOT** want to open the main routing table to the internet. This would cause every subnet by default to be open to the internet.
 
 Click "Create route table"
 
-![AWS Console / Virtual Private Cloud / Route Tables / Create Route Table](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348955575/b9bd0bfd-feb7-45f2-a0ed-a0dac9c8bcdf.png align="left")
+![AWS Console / Virtual Private Cloud / Route Tables / Create Route Table](./b9bd0bfd-feb7-45f2-a0ed-a0dac9c8bcdf.png)
 
 Give your new route table a name, and associate it with your new VPC
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348957420/0e460d2f-0d50-4bb9-b6ca-f451432245f3.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.30.58_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348957420/0e460d2f-0d50-4bb9-b6ca-f451432245f3.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.30.58_AM.png)
 
 Click "Create"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348958704/f834f859-1d37-43cf-b07d-35f9652a1217.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.31.01_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348958704/f834f859-1d37-43cf-b07d-35f9652a1217.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.31.01_AM.png)
 
 Click "Close" and you should be taken to your route tables table:
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348960173/ba103014-eba9-4d08-9bc6-eb807ce7a79c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.31.12_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348960173/ba103014-eba9-4d08-9bc6-eb807ce7a79c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.31.12_AM.png)
 
 Select your new route table and navigate to the "routes" tab:
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348961923/9b6cefbf-34ca-42dd-9527-d043a4b4f2d1.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.31.58_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348961923/9b6cefbf-34ca-42dd-9527-d043a4b4f2d1.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.31.58_AM.png)
 
 You'll notice the new route table is not automatically configured to connect with the internet.
 
 Click on "Edit routes"
 
-![AWS Console / Virtual Private Cloud / Route Tables / New Route Table / Edit Routes Button](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348963863/c81461d3-de3e-41b4-9e0e-0795911a13b5.png align="left")
+![AWS Console / Virtual Private Cloud / Route Tables / New Route Table / Edit Routes Button](./c81461d3-de3e-41b4-9e0e-0795911a13b5.png)
 
 Add both IPv4 and IPv6 routes and select the internet gateway that was created in the last section:
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348965590/c3768651-0b86-41d6-bf00-0cec1ba8262d.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.01_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348965590/c3768651-0b86-41d6-bf00-0cec1ba8262d.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.01_AM.png)
 
 Note: 0.0.0.0/0 - IPv4 and ::/0 - IPv6
 
 Click "Save routes" when done.
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348967438/64fb6f1c-cf4e-437d-880b-5dc5ee891b5a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.04_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348967438/64fb6f1c-cf4e-437d-880b-5dc5ee891b5a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.04_AM.png)
 
 Click "Close". You should now be taken to your routes table.
 
 Click on your new route table, and select "Routes" tab. You should see your new routes added:
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348968926/4e8e1549-e05c-4cd6-ba69-cd403a3a8328.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.06_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348968926/4e8e1549-e05c-4cd6-ba69-cd403a3a8328.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.06_AM.png)
 
 However, neither of our subnets are associated with this public facing route table.
 
 Select, "Subnet Associations"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348970771/279749c8-5847-4a4e-8cc3-0eaf5e7d8251.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.24_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348970771/279749c8-5847-4a4e-8cc3-0eaf5e7d8251.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.24_AM.png)
 
 You'll notice, no subnets are associated with this table.
 
 Click "Edit subnet associations"
 
-![AWS Console / VPCs / Route Tables / New Route Table / Edit Subnet Associations](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348972472/c44b684d-14e8-4f5c-b200-27e58fe2e828.png align="left")
+![AWS Console / VPCs / Route Tables / New Route Table / Edit Subnet Associations](./c44b684d-14e8-4f5c-b200-27e58fe2e828.png)
 
 Select the subnet(s) you want to be public, for this article, we're selecting any device under 10.0.1.0/24 to be public.
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348974239/7259cfba-6844-4263-993f-b102e6e02d3c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.33_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348974239/7259cfba-6844-4263-993f-b102e6e02d3c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.33_AM.png)
 
 Click "Save"
 
 Now, when you select a route table and inspect it's associated subnets - you should see something like:
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348976112/2add0bf3-0d5e-4e56-be64-112d61ae3264.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.37_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348976112/2add0bf3-0d5e-4e56-be64-112d61ae3264.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.37_AM.png)
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348977794/bb94dc25-3abb-47cb-ae7b-2f9e388fbc94.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.40_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348977794/bb94dc25-3abb-47cb-ae7b-2f9e388fbc94.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.33.40_AM.png)
 
 Note that 10.0.1.0/24 has been associated with our new public route table, while 10.0.2.0/24 stays in our private main routing table.
 
@@ -256,33 +256,33 @@ Our public EC2 instance will be our webserver, this is where your Rails, Django,
 
 Navigate to EC2
 
-![AWS Console / Menu / EC2](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348979741/36d0e512-123d-4af5-b8b0-f0fd55f69285.png align="left")
+![AWS Console / Menu / EC2](./36d0e512-123d-4af5-b8b0-f0fd55f69285.png)
 
 Click "Launch Instance" and select "Launch instance" from dropdown:
 
-![AWS Console / EC2 / Launch Instance button](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348981549/4616dda2-c2d3-4ddc-8554-fb8fbc95fb04.png align="left")
+![AWS Console / EC2 / Launch Instance button](./4616dda2-c2d3-4ddc-8554-fb8fbc95fb04.png)
 
 Select an AMI, for this article - we're going with the first option:
 
-![AWS Console / EC2 / Launch Instance / Choose AMI](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348983226/5a776540-5c85-49f2-8ed6-7d56e533f925.png align="left")
+![AWS Console / EC2 / Launch Instance / Choose AMI](./5a776540-5c85-49f2-8ed6-7d56e533f925.png)
 
 Select the instance type you prefer, again for this article we're keeping it simple so we're going with the free tier t2.micro instance type. Then click "Configure Instance Details".
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348984895/3104b753-858b-434a-a292-e933fd26679f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.34.49_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348984895/3104b753-858b-434a-a292-e933fd26679f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.34.49_AM.png)
 
 These are the default settings you'll see:
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348986945/036c90d5-552a-4448-a2e6-663ae3c6a915.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.34.58_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348986945/036c90d5-552a-4448-a2e6-663ae3c6a915.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.34.58_AM.png)
 
 You'll want to change the "Network" and "Subnet". The "Network" will be your **VPC** and your subnet will be your **public subnet**.
 
-![AWS Console / EC2 / Launch Instance / Configure Instance](https://cdn.hashnode.com/res/hashnode/image/upload/v1722348988595/c70e0a73-a1af-4d55-8c98-82e2f47aded7.png align="left")
+![AWS Console / EC2 / Launch Instance / Configure Instance](./c70e0a73-a1af-4d55-8c98-82e2f47aded7.png)
 
 Note: The auto-assign Public IP is set to "Use subnet setting (Enable)".
 
 Click "Next: Add Storage"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348990062/1aa03331-57d7-4c7c-8f61-b821178b12b9.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.35.33_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348990062/1aa03331-57d7-4c7c-8f61-b821178b12b9.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-05_at_7.35.33_AM.png)
 
 We're not changing anything here, click "Next: Add Tags"
 
@@ -290,19 +290,19 @@ Here, we're going to add a "Name" and set it to "awesomesauceWebServer" - you ca
 
 When you're done, click "Next: Configure Security Group"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348991931/1067e53d-5996-4dc1-bb23-647c8847c68c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.49.02_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348991931/1067e53d-5996-4dc1-bb23-647c8847c68c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.49.02_AM.png)
 
 Here, we'll create a new security group - I'm naming this one "awesomesauceDMZ". I'm also adding a rule for HTTP. To do this, click "Add Rule" and select "HTTP" from the dropdown.
 
 When you're done, click "Review and Launch"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348993359/a9ca01e5-7673-478f-a9b8-49f3d65f2a9f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.51.34_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348993359/a9ca01e5-7673-478f-a9b8-49f3d65f2a9f.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.51.34_AM.png)
 
 On this page, you can review all the settings for your public EC2 instance:
 
 When, you're done verifying the settings - click "Launch".
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348994996/fb7fca66-4dfd-4ad0-af5e-8c5c3e774020.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.51.38_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348994996/fb7fca66-4dfd-4ad0-af5e-8c5c3e774020.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.51.38_AM.png)
 
 The next step is creating or selecting an existing key pair. For this article, I'm going to create a new key pair and name it "awesomesauceKP".
 
@@ -310,15 +310,15 @@ Make sure to download this Key Pair and move it to a secure location. I store mi
 
 Finally, click "Launch Instance".
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348996637/970c5cb5-dce8-4b18-b6ce-1bfebf12280d.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.52.33_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348996637/970c5cb5-dce8-4b18-b6ce-1bfebf12280d.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.52.33_AM.png)
 
 Your new instance will now start launching, click "View Instances"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348998322/8d204630-05bb-488e-a5b1-f39838ec0450.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.52.38_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348998322/8d204630-05bb-488e-a5b1-f39838ec0450.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_7.52.38_AM.png)
 
 When your new instance is done "launching" it will be in the instance state "running":
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348999947/fd4611e6-2c0d-4b70-b0d1-f3b0a42a2766.jpeg](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Instances__EC2_Management_Console_2020-02-09_08-02-14.jpg align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722348999947/fd4611e6-2c0d-4b70-b0d1-f3b0a42a2766.jpeg](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Instances__EC2_Management_Console_2020-02-09_08-02-14.jpg)
 
 Awesome! Now it's time to create a private EC2 instance.
 
@@ -328,23 +328,23 @@ Awesome! Now it's time to create a private EC2 instance.
 
 Click "Launch instance"
 
-![AWS Console / EC2 / Launch Instance Button w/ Public Instance Created](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349001748/ce3fc1d2-ef4d-4b29-9e5b-b8c7aeea543e.png align="left")
+![AWS Console / EC2 / Launch Instance Button w/ Public Instance Created](./ce3fc1d2-ef4d-4b29-9e5b-b8c7aeea543e.png)
 
 Select the AMI at the top, Amazon Linux 2 AMI
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349003373/c4ff622b-e440-48ce-b988-d14429ec7bdb.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.06.41_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349003373/c4ff622b-e440-48ce-b988-d14429ec7bdb.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.06.41_AM.png)
 
 For the instance type, select t2.micro (free tier) and click "Next: Configure Instance Details"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349004759/d00dac4b-a619-4c72-ad0c-5296ae46413c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.06.44_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349004759/d00dac4b-a619-4c72-ad0c-5296ae46413c.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.06.44_AM.png)
 
 These are the default settings you will see for your instance:
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349006351/058f176c-75c8-42ad-b3e2-3646a2a2bda2.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.06.50_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349006351/058f176c-75c8-42ad-b3e2-3646a2a2bda2.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.06.50_AM.png)
 
 Let's configure this instance to use our VPC and the private subnet:
 
-![AWS Console / EC2 / Launch Instance / Configure Instance / Private Subnet](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349007940/df11ed12-eede-4900-bfea-c1fffe5bb800.png align="left")
+![AWS Console / EC2 / Launch Instance / Configure Instance / Private Subnet](./df11ed12-eede-4900-bfea-c1fffe5bb800.png)
 
 Note: The "Auto-assign Public IP" option will be set to "Use subnet setting (Disable)". It is disabled because we're putting it behind our private subnet.
 
@@ -352,25 +352,25 @@ Click "Next: Add Storage"
 
 We'll leave our storage as is. Click "Next: Add Tags"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349009595/e9a0d512-b46f-4e4d-a0e3-b95a2fc8ba31.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.15.20_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349009595/e9a0d512-b46f-4e4d-a0e3-b95a2fc8ba31.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.15.20_AM.png)
 
 I'm going to give this instance a "Name" of "awesomesauceDBServer".
 
 Click "Next: Configure Security Groups"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349011251/57c28782-f9ab-4f9c-b987-fc129d0e63c0.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.51.26_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349011251/57c28782-f9ab-4f9c-b987-fc129d0e63c0.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.51.26_AM.png)
 
 This private instance will keep the default security group.
 
 Click "Review and Launch"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349013200/af27eba0-1b18-4a2d-95c2-a6462b4e83ee.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.21_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349013200/af27eba0-1b18-4a2d-95c2-a6462b4e83ee.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.21_AM.png)
 
 Review your instances setup here.
 
 When done, click "Launch"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349014493/4ccc61be-56c5-4ecb-aecf-41d6113afba5.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.37_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349014493/4ccc61be-56c5-4ecb-aecf-41d6113afba5.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.37_AM.png)
 
 Before launching, you'll be asked again to "Select an existing key pair or create new key pair". Select "Choose an existing key pair" and select the created key pair from the last section called "awesomesauceKP".
 
@@ -378,15 +378,15 @@ Check the checkbox for acknowledging you have access to that key pair.
 
 Click "Launch Instances"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349016108/3eef414e-dbed-4cec-a967-35c5394135e4.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.47_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349016108/3eef414e-dbed-4cec-a967-35c5394135e4.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.47_AM.png)
 
 You'll be taken to your instances status page, click "View Instances"
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349017595/2870b66c-f8a3-4fb2-8675-be0a106ace2a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.53_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349017595/2870b66c-f8a3-4fb2-8675-be0a106ace2a.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_8.23.53_AM.png)
 
 Your instance may be pending, but once it's finished launching - you should see:
 
-![AWS Console / EC2 / Launched Instances](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349019262/da6db76c-a2e3-4dcc-9f98-3ed6fdc6558f.png align="left")
+![AWS Console / EC2 / Launched Instances](./da6db76c-a2e3-4dcc-9f98-3ed6fdc6558f.png)
 
 Note: Your public instance, WebServer, will have an IPv4 Public IP - while your DBServer will not.
 
@@ -437,11 +437,11 @@ This is because we used our default security group when creating the private ins
 
 From the instances page, click on "Security Groups" in the left sidebar.
 
-![AWS Console / EC2 / Security Groups Sidebar Link](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349020672/b56422ff-229e-425a-a8b9-17962e39d1cd.png align="left")
+![AWS Console / EC2 / Security Groups Sidebar Link](./b56422ff-229e-425a-a8b9-17962e39d1cd.png)
 
 Click on "Create Security Group".
 
-![AWS Console / EC2 / Security Groups / Create Security Group Button](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349022447/e41e6438-21ca-4beb-a5e9-2ed5fa74e37c.png align="left")
+![AWS Console / EC2 / Security Groups / Create Security Group Button](./e41e6438-21ca-4beb-a5e9-2ed5fa74e37c.png)
 
 In the "Create Security Group" modal - you'll want out enable a few inbound rules:
 
@@ -456,23 +456,23 @@ In the "Create Security Group" modal - you'll want out enable a few inbound rule
 
 Each rule should then have a "Custom" source set to our public subnet 10.0.1.0/24. This security group is essentially going to tell our DB server that they allowed inbound communication from our public facing subnet.
 
-![AWS Console / EC2 / Security Groups / Create Security Group Modal Values](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349023945/baa66da5-5307-45b2-9167-cb4f41938b39.png align="left")
+![AWS Console / EC2 / Security Groups / Create Security Group Modal Values](./baa66da5-5307-45b2-9167-cb4f41938b39.png)
 
 Click "Create" and you should see your new security group in the table, like so:
 
-![AWS Console / EC2 / Security Groups / Table with New Security Group](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349025387/9d4d78a1-d392-4c89-b424-a93b2c3ef2b3.png align="left")
+![AWS Console / EC2 / Security Groups / Table with New Security Group](./9d4d78a1-d392-4c89-b424-a93b2c3ef2b3.png)
 
 Now, click on "Instances" in the left sidebar.
 
-![AWS Console / EC2 / Instances in Sidebar link](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349026847/4d659fa6-db83-4c2b-8a7e-b35c10ede774.png align="left")
+![AWS Console / EC2 / Instances in Sidebar link](./4d659fa6-db83-4c2b-8a7e-b35c10ede774.png)
 
 From here, select the DB server, ours is "awesomesauceDBServer" and click "Actions". In the dropdown, hover over "Networking" and in the sub dropdown - click on "Change Security Group".
 
-![AWS Console / EC2 / Instances / Change Security Group Action in Dropdown.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349028535/8f7b0cf9-9bf4-4645-b912-cb56829522ec.png align="left")
+![AWS Console / EC2 / Instances / Change Security Group Action in Dropdown.png](./8f7b0cf9-9bf4-4645-b912-cb56829522ec.png)
 
 In the "Change Security Groups" mdoal, select the new security group we created and uncheck the default security group.
 
-![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349030175/7999964a-94cf-4e7b-8364-cb281a90f2cb.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_11.03.16_AM.png align="left")
+![https://cdn.hashnode.com/res/hashnode/image/upload/v1722349030175/7999964a-94cf-4e7b-8364-cb281a90f2cb.png](https://alvincrespo-blog.s3.us-east-2.amazonaws.com/aws-setting-up-a-vpc-from-scratch/Screen_Shot_2020-02-09_at_11.03.16_AM.png)
 
 When you're done, click on "Assign Security Group".
 
@@ -508,7 +508,7 @@ rtt min/avg/max/mdev = 0.985/0.986/0.988/0.031 ms
 
 # Summary: What we built
 
-![Basic VPC Architecture](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349031715/d308519c-07a7-421c-83ef-f5e813d859db.png align="left")
+![Basic VPC Architecture](./d308519c-07a7-421c-83ef-f5e813d859db.png)
 
 The diagram above shows what we have built.
 

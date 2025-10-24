@@ -103,97 +103,97 @@ Here’s what I do:
 
 Let’s start by going to the repo:
 
-![](https://miro.medium.com/v2/resize:fit:875/1*qsE-d_CqTObODajysPrdgQ.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*qsE-d_CqTObODajysPrdgQ.png)
 
 I’m going to search for `useQuery`, and luckily my second result is the test for this hook. I can look at the test, but I'm going to dive deeper.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*EwJyU4WW0Z2XPeafCs2-8g.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*EwJyU4WW0Z2XPeafCs2-8g.png)
 
 The test tells me where `useQuery` exists, so I'm going to go up one directory and check it out.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*Wyh6XpfrC-uq7B3V0aWfjg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*Wyh6XpfrC-uq7B3V0aWfjg.png)
 
 Ok cool, there it is — let’s click into `useQuery.ts`
 
-![](https://miro.medium.com/v2/resize:fit:875/1*w1KRNRcJVXCaWZGjCGRv4g.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*w1KRNRcJVXCaWZGjCGRv4g.png)
 
 Alright! We’re looking at source code…but… there’s nothing here — what do I do?
 
-![](https://miro.medium.com/v2/resize:fit:875/1*IQLEmHNNe1z_odVKT_4uwQ.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*IQLEmHNNe1z_odVKT_4uwQ.png)
 
 It looks like it’s using something called `useBaseQuery`, the import above shows it's in a utils directory - let's go to it.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*JH6SeEYR9NPzVhObMduODA.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*JH6SeEYR9NPzVhObMduODA.png)
 
 Ok, we’ve found the file — let’s open it.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*8-k1UI0t_OfRKL6bLeg4dg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*8-k1UI0t_OfRKL6bLeg4dg.png)
 
 Ok. I’m digging through the file and I see something called `queryResult.loading`. I don't know what `queryResult` is so, let's see what it is...
 
-![](https://miro.medium.com/v2/resize:fit:875/1*GC7fgjZ86Pz_nVp-IwfzQQ.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*GC7fgjZ86Pz_nVp-IwfzQQ.png)
 
 Ok, looks like it depends on if `lazy` is true or false. Since we didn't specify anything `lazy` about our hook as an option, I'm assuming it is the second one where we typecast it as `QueryResult`.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*HlEvq8U4zjUAxswhp9Rzow.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*HlEvq8U4zjUAxswhp9Rzow.png)
 
 This is the line, I’m assuming we hit:
 
-![](https://miro.medium.com/v2/resize:fit:875/1*7YztZm1mHKoM6fqwxR_5KQ.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*7YztZm1mHKoM6fqwxR_5KQ.png)
 
 Regardless, whats `result`? Ah, ok it's above.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*6LToGPeGGkr63dWa2WGNFw.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*6LToGPeGGkr63dWa2WGNFw.png)
 
 Ok so within this other hook is a call to `executeLazy` or just `execute`.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*MNCt4rpq5qslArxk1dMjIA.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*MNCt4rpq5qslArxk1dMjIA.png)
 
 I’m going to assume where calling `queryData.execute` because I didn't specify `lazy`. But, what's `queryData`?
 
-![](https://miro.medium.com/v2/resize:fit:875/1*03wXCoHH3hnaQnhDrIWB5g.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*03wXCoHH3hnaQnhDrIWB5g.png)
 
 Looking further above, it looks like it gets set to some current thing or a new thing. The new thing is an instance of `QueryData`. So, knowing what we know so far `execute` is a method on an instance of `QueryData`.
 
 Nothing significant about `loading` here - it looks to be contained within this `QueryData` type. So let's dig deeper.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*htBRKuUJ5fV4eOCVa5aP6g.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*htBRKuUJ5fV4eOCVa5aP6g.png)
 
 Looks like `QueryData` is being imported by two levels above. Let's go to it.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*GtMQESW0mmOwD8EhTMuIBg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*GtMQESW0mmOwD8EhTMuIBg.png)
 
 Found it! Let’s go into the data directory:
 
-![](https://miro.medium.com/v2/resize:fit:875/1*msvQHzeLxTHqqHOl2GWSHg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*msvQHzeLxTHqqHOl2GWSHg.png)
 
 Once here, we’ve found `QueryData.ts` - let's click it.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*3N6jb66xHY6TVK8WyKuTrg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*3N6jb66xHY6TVK8WyKuTrg.png)
 
 Alright, we’ve found the `QueryData` class! Let's investigate for `execute`
 
-![](https://miro.medium.com/v2/resize:fit:875/1*bjpueQCJlyGmMKFw7tiyHg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*bjpueQCJlyGmMKFw7tiyHg.png)
 
 Found it! Let’s see what it does:
 
-![](https://miro.medium.com/v2/resize:fit:875/1*GG_iak5Jbv6a7Hv-nNzYeg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*GG_iak5Jbv6a7Hv-nNzYeg.png)
 
 Ok, it seems to make a call to `getExecuteSsrResult` or `getExecuteResult`. Since we're not doing anything SSR related, I'm going to expect `getExecuteResult` is what gets called. Let's see what that does.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*woVVMPhht2HSssY3QIYvGQ.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*woVVMPhht2HSssY3QIYvGQ.png)
 
 There it is!
 
-![](https://miro.medium.com/v2/resize:fit:875/1*1qYk-5woUgiUc20_-8Nxjg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*1qYk-5woUgiUc20_-8Nxjg.png)
 
 This function seems to call `getQueryResult` - ok, that definitely seems relevant! Let's see what it does.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*ZOwX_ajppK7_X9lJnuJBxw.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*ZOwX_ajppK7_X9lJnuJBxw.png)
 
 And boom! We’ve found where all the magic happens. This is the function that returns the result we’ve been looking for. Here, we’ll find `loading`, `error`, and `data`.
 
-![](https://miro.medium.com/v2/resize:fit:875/1*JUO8psTQn2EbPclcXFmvQg.png align="left")
+![](https://miro.medium.com/v2/resize:fit:875/1*JUO8psTQn2EbPclcXFmvQg.png)
 
 # **Fín**
 

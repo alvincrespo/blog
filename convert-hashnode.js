@@ -231,8 +231,8 @@ async function main() {
       // Sanitize description: remove newlines and escape quotes
       const description = brief.replace(/\n/g, ' ').replace(/"/g, '\\"');
 
-      // Fix Hashnode image format: remove align="center" attribute
-      let fixedContent = contentMarkdown.replace(/ align="center"/g, '');
+      // Fix Hashnode image format: remove all align attributes
+      let fixedContent = contentMarkdown.replace(/ align="[^"]*"/g, '');
 
       // Create the export directory
       const blogDir = path.join(exportDir, slug);
@@ -240,8 +240,8 @@ async function main() {
         fs.mkdirSync(blogDir, { recursive: true });
       }
 
-      // Download images and update URLs
-      const imageRegex = /!\[\]\((https:\/\/cdn\.hashnode\.com[^\)]+)\)/g;
+      // Download images and update URLs (match images with any alt text, not just empty)
+      const imageRegex = /!\[[^\]]*\]\((https:\/\/cdn\.hashnode\.com[^\)]+)\)/g;
       const matches = [...fixedContent.matchAll(imageRegex)];
 
       for (const match of matches) {

@@ -1,8 +1,8 @@
 ---
 title: Fixing image orientation on mobile camera uploads
 date: "2019-11-02T06:54:00.000Z"
-description: Ever run into an issue trying to fix image orientation when uploading an image that was taken with the camera on a mobile device directly? Yeah, I ran into this issue this week...not fun.
-tags: javascript,exif,orientation,mobile
+description: "Ever run into an issue trying to fix image orientation when uploading an image that was taken with the camera on a mobile device directly Yeah, I ran into this issue this week...not fun. After doing some research this week around the issue, I found a..."
+tags:
 ---
 
 Ever run into an issue trying to fix image orientation when uploading an image that was taken with the camera on a mobile device directly Yeah, I ran into this issue this week...not fun.
@@ -15,11 +15,16 @@ So let's start with understanding the issue.
 
 The only time you run into this specific issue is when a user tries to upload a photo taken during the user experience. The story is usually:
 
-- User visits app
-- User clicks "upload image"
-- User selects camera on phone
-- User takes picture
-- User confirms this is the picture they want to use
+* User visits app
+    
+* User clicks "upload image"
+    
+* User selects camera on phone
+    
+* User takes picture
+    
+* User confirms this is the picture they want to use
+    
 
 If you create the image blob and set it to the source of an `<img>` then you get an incorrect orientation of that image.
 
@@ -49,7 +54,7 @@ On top of figuring this out for you, they have provided an easy to use [API](htt
 
 First, install the package:
 
-```shell
+```bash
 yarn add blueimp-load-image
 ```
 
@@ -77,6 +82,6 @@ const handleFileChange = ({ target: { files } }) => {
 
 Note that I'm setting `orientation` to `true`as part `loadImage`'s 2nd parameter object. I've also included a `maxWidth` of 125 for my use case. For more options, check out the docs [here](https://github.com/blueimp/JavaScript-Load-Image#options).
 
-<hr>
+---
 
-Alright folks, that's all I have for today. If you found this helpful, have feedback or are interested in a quick chat - hit me up at <a href="https://twitter.com/alvincrespo" target="_blank" rel="noopener noreferrer">@alvincrespo</a>.
+Alright folks, that's all I have for today. If you found this helpful, have feedback or are interested in a quick chat - hit me up at [@alvincrespo](https://twitter.com/alvincrespo).

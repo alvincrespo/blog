@@ -119,19 +119,19 @@ To move a bit faster, I'm dropping screenshots below of what these models should
 
 ## Cover Letter
 
-![Cover Letter](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349037194/d04939f6-6373-409d-9f07-ca8d7cb1387e.png align="left")
+![Cover Letter](./d04939f6-6373-409d-9f07-ca8d7cb1387e.png)
 
 ## Frequently Asked Question
 
-![Frequently Asked Question](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349038742/7d3723e9-f0d4-4143-ac3e-c3def7423315.png align="left")
+![Frequently Asked Question](./7d3723e9-f0d4-4143-ac3e-c3def7423315.png)
 
 ## Icon
 
-![Icon](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349040618/ceb572ec-5cbd-4106-94e8-60cfc26f2e7a.png align="left")
+![Icon](./ceb572ec-5cbd-4106-94e8-60cfc26f2e7a.png)
 
 ## Skill
 
-![Skill](https://cdn.hashnode.com/res/hashnode/image/upload/v1722349042122/f0330783-c52c-49e8-a4eb-228fdfd4afb3.png align="left")
+![Skill](./f0330783-c52c-49e8-a4eb-228fdfd4afb3.png)
 
 # DatoCMS - Text Field Presentations
 

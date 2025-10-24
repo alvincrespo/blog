@@ -24,11 +24,11 @@ With the env var file open and in focus, do the following
 3. In the language mode dropdown, type `plaintext` and select it.
     
 
-![Open the Command Pallete](https://cdn.hashnode.com/res/hashnode/image/upload/v1727519307422/2f7b2f36-cace-44fd-b66f-a88f62a68ab5.png)
+![Open the Command Pallete](./2f7b2f36-cace-44fd-b66f-a88f62a68ab5.png)
 
-![Change Language Model](https://cdn.hashnode.com/res/hashnode/image/upload/v1727519314375/055a8e05-bfe4-4355-a629-edb66b1d0a81.png)
+![Change Language Model](./055a8e05-bfe4-4355-a629-edb66b1d0a81.png)
 
-![Verify Plaintext is selected](https://cdn.hashnode.com/res/hashnode/image/upload/v1727519318382/adca8f06-6d01-447e-b482-b99ec0900519.png)
+![Verify Plaintext is selected](./adca8f06-6d01-447e-b482-b99ec0900519.png)
 
 ## File in focus (gui)
 
@@ -41,11 +41,11 @@ With the env var file open and in focus, do the following
 3. Type `plaintext` and select it.
     
 
-![Click on Language Mode Selector at the bottom right](https://cdn.hashnode.com/res/hashnode/image/upload/v1727519546693/7f89d085-e3d4-426e-96cc-9274f76e68ac.png)
+![Click on Language Mode Selector at the bottom right](./7f89d085-e3d4-426e-96cc-9274f76e68ac.png)
 
-![Select Configure File Association for '.env'](https://cdn.hashnode.com/res/hashnode/image/upload/v1727519555216/d50d2366-2f74-41db-a781-68e4d5053f86.png)
+![Select Configure File Association for '.env'](./d50d2366-2f74-41db-a781-68e4d5053f86.png)
 
-![Type plaintext and select it](https://cdn.hashnode.com/res/hashnode/image/upload/v1727519558544/6c0a5966-49fc-4937-87b5-f211d8feab3b.png)
+![Type plaintext and select it](./6c0a5966-49fc-4937-87b5-f211d8feab3b.png)
 
 ## User Settings (JSON)
 
@@ -62,7 +62,7 @@ With the env var file open and in focus, do the following
 }
 ```
 
-![Open Command Palette and type "open user settings"](https://cdn.hashnode.com/res/hashnode/image/upload/v1727520335193/42e46d90-6c72-4a4a-b44a-48bb745a90c5.png)
+![Open Command Palette and type "open user settings"](./42e46d90-6c72-4a4a-b44a-48bb745a90c5.png)
 
 ## User Settings (UI)
 
@@ -73,7 +73,7 @@ With the env var file open and in focus, do the following
 3. Add `.env` as an item and set it to `plaintext`
     
 
-![Adding .env to settings in UI](https://cdn.hashnode.com/res/hashnode/image/upload/v1727520525150/c77c0806-0666-4bb6-adb1-953806f07957.png)
+![Adding .env to settings in UI](./c77c0806-0666-4bb6-adb1-953806f07957.png)
 
 ### Bonus: Wildcard env var files
 
