@@ -56,11 +56,6 @@ There are no build scripts, compilation steps, or framework-specific configurati
 ### No Current Build/Dev Setup
 Since the Gatsby build infrastructure has been removed, there are currently **no npm scripts or build commands** to run. The repository is pure content.
 
-If you need to rebuild the blog with a framework, here are the previous dependencies (now removed):
-- **Gatsby.js** (v2.32.12) - Used `gatsby develop` and `gatsby build`
-- **Tailwind CSS** - PostCSS-based styling
-- **Prettier** - Code formatting
-
 ### Adding New Content
 To add a new blog post:
 1. Create a new directory in `/blog/` with a URL-friendly slug name
@@ -84,11 +79,3 @@ The blog covers topics across:
 2. **No Linting:** All code formatting and linting configuration has been removed.
 3. **Hashnode Archive:** The `hashnode/` directory contains an export of articles, possibly for backup or multi-platform publishing purposes.
 4. **Git as Source of Truth:** The full commit history (starting from very early commits) serves as the version control and archive for all content changes.
-
-## Future Rebuild Considerations
-
-If rebuilding the blog with a framework:
-- Previous stack used Gatsby + React + Tailwind CSS
-- Remark/MDX ecosystem was used for Markdown processing and syntax highlighting
-- Images were optimized through Gatsby Image and gatsby-transformer-sharp
-- Consider using Next.js + MDX or Astro as modern alternatives
