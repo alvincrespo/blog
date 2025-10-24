@@ -12,6 +12,16 @@ const post = data.posts[0];
 // Extract relevant fields
 let { title, dateAdded, brief, slug, contentMarkdown, coverImage } = post;
 
+// Check if slug already exists in blog directory
+const blogBaseDir = path.join(__dirname, 'blog');
+const postDirExists = fs.existsSync(path.join(blogBaseDir, slug));
+
+if (postDirExists) {
+  console.log(`⚠ Post will NOT be converted: "${title}" (${slug})`);
+  console.log(`  Reason: Post directory already exists in /blog/${slug}`);
+  process.exit(0);
+}
+
 // Sanitize description: remove newlines and escape quotes
 const description = brief.replace(/\n/g, ' ').replace(/"/g, '\\"');
 
