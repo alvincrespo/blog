@@ -2,6 +2,8 @@
 
 My personal thoughts on all things tech.
 
+If you want a nicely version of my thoughts, check out [https://alvincrespo.hashnode.dev/](https://alvincrespo.hashnode.dev/)
+
 ## Overview
 
 My blog covers practical topics across software engineering and management.
