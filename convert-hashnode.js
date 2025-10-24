@@ -2,13 +2,22 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-// Determine blog directory from environment variable or default to 'blog'
-const blogDirName = process.env.BLOG_DIR || 'blog';
-const blogBaseDir = path.join(process.cwd(), blogDirName);
+// Determine export and read directories from environment variables
+const exportDirName = process.env.EXPORT_DIR || 'blog';
+const readDirName = process.env.READ_DIR || 'blog';
 
-// Verify the blog directory exists
-if (!fs.existsSync(blogBaseDir)) {
-  console.error(`✗ Error: Blog directory does not exist: ${blogBaseDir}`);
+const exportDir = path.join(process.cwd(), exportDirName);
+const readDir = path.join(process.cwd(), readDirName);
+
+// Verify the export directory exists
+if (!fs.existsSync(exportDir)) {
+  console.error(`✗ Error: Export directory does not exist: ${exportDir}`);
+  process.exit(1);
+}
+
+// Verify the read directory exists
+if (!fs.existsSync(readDir)) {
+  console.error(`✗ Error: Read directory does not exist: ${readDir}`);
   process.exit(1);
 }
 
@@ -22,12 +31,12 @@ const post = data.posts[0];
 // Extract relevant fields
 let { title, dateAdded, brief, slug, contentMarkdown, coverImage } = post;
 
-// Check if slug already exists in blog directory
-const postDirExists = fs.existsSync(path.join(blogBaseDir, slug));
+// Check if slug already exists in read directory
+const postDirExists = fs.existsSync(path.join(readDir, slug));
 
 if (postDirExists) {
   console.log(`⚠ Post will NOT be converted: "${title}" (${slug})`);
-  console.log(`  Reason: Post directory already exists in /${blogDirName}/${slug}`);
+  console.log(`  Reason: Post directory already exists in /${readDirName}/${slug}`);
   process.exit(0);
 }
 
@@ -37,8 +46,8 @@ const description = brief.replace(/\n/g, ' ').replace(/"/g, '\\"');
 // Fix Hashnode image format: remove align="center" attribute
 let fixedContent = contentMarkdown.replace(/ align="center"/g, '');
 
-// Create the blog directory
-const blogDir = path.join(blogBaseDir, slug);
+// Create the export directory
+const blogDir = path.join(exportDir, slug);
 if (!fs.existsSync(blogDir)) {
   fs.mkdirSync(blogDir, { recursive: true });
 }
