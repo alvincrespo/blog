@@ -23,7 +23,7 @@ blog/                    # 24 blog post directories
 ├── ... [other posts]
 
 hashnode/               # Hashnode export archive
-└── epxort-articles.json
+└── export-articles.json
 
 LICENSE                 # MIT License (2025)
 README.md               # (Currently minimal)
