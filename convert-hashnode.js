@@ -2,6 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
+// Constants
+const IMAGE_DOWNLOAD_DELAY_MS = 200;
+
 // Logger class for dual output (console + file)
 class Logger {
   constructor(logFilePath) {
@@ -274,8 +277,8 @@ async function main() {
         // Replace CDN URL with relative path
         fixedContent = fixedContent.replace(url, `./${filename}`);
 
-        // Add small delay between downloads (200ms)
-        await new Promise(resolve => setTimeout(resolve, 200));
+        // Add small delay between downloads to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, IMAGE_DOWNLOAD_DELAY_MS));
       }
 
       // Download cover image
