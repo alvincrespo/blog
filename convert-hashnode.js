@@ -2,6 +2,16 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
+// Determine blog directory from environment variable or default to 'blog'
+const blogDirName = process.env.BLOG_DIR || 'blog';
+const blogBaseDir = path.join(process.cwd(), blogDirName);
+
+// Verify the blog directory exists
+if (!fs.existsSync(blogBaseDir)) {
+  console.error(`✗ Error: Blog directory does not exist: ${blogBaseDir}`);
+  process.exit(1);
+}
+
 // Read the Hashnode export
 const exportPath = path.join(__dirname, 'hashnode', 'export-articles.json');
 const data = JSON.parse(fs.readFileSync(exportPath, 'utf8'));
@@ -13,12 +23,11 @@ const post = data.posts[0];
 let { title, dateAdded, brief, slug, contentMarkdown, coverImage } = post;
 
 // Check if slug already exists in blog directory
-const blogBaseDir = path.join(__dirname, 'blog');
 const postDirExists = fs.existsSync(path.join(blogBaseDir, slug));
 
 if (postDirExists) {
   console.log(`⚠ Post will NOT be converted: "${title}" (${slug})`);
-  console.log(`  Reason: Post directory already exists in /blog/${slug}`);
+  console.log(`  Reason: Post directory already exists in /${blogDirName}/${slug}`);
   process.exit(0);
 }
 
@@ -29,7 +38,7 @@ const description = brief.replace(/\n/g, ' ').replace(/"/g, '\\"');
 let fixedContent = contentMarkdown.replace(/ align="center"/g, '');
 
 // Create the blog directory
-const blogDir = path.join(__dirname, 'blog', slug);
+const blogDir = path.join(blogBaseDir, slug);
 if (!fs.existsSync(blogDir)) {
   fs.mkdirSync(blogDir, { recursive: true });
 }
